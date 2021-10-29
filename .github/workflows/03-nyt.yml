@@ -19,7 +19,7 @@ jobs:
       ##################################################################
       # YOU ONLY NEED TO CHANGE THIS BIT -------------------------------
       - name: Render
-      - env: # Set the secret as an input
+        env: 
           NYT_APIKEY: ${{ secrets.NYT_APIKEY }}
         run:  |
           cd 03-nyt
