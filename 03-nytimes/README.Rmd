@@ -66,7 +66,7 @@ library(ggwordcloud)
 
 words <- as.data.frame(table(unlist(kws)))
 
-stopifnot(length(words) > 1)
+stopifnot(nrow(words) > 1)
 
 ggwordcloud(words[, 1], words[, 2])
 ```
