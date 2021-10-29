@@ -1,9 +1,38 @@
 
+``` r
+library(data.table)
+library(ggplot2)
+library(forcats)
+
+url_equity <- "https://data.chhs.ca.gov/dataset/f88f9d7f-635d-4334-9dac-4ce773afe4e5/resource/11fa525e-1c7b-4cf5-99e1-d4141ea590e4/download/covid19case_rate_by_social_det.csv"
+
+download.file(
+  url      = url_equity,
+  destfile = "equity.csv",
+  method   = "wget"
+  )
+
+dat <- fread("equity.csv")
+```
+
 # COVID-19 Equity in the California
 
 This figure is automatically built using [GitHub
 actions](https://github.com/features/actions) together with
 [Docker](https://www.docker.com/). The yml file used for this report is
 [here](../.github/workflows/01-covid-equity.yml)
+
+``` r
+# Reordering factors
+dat[social_det == "income"] %>%
+  ggplot(aes(x = date, y = case_rate_per_100k)) +
+  geom_line(aes(colour = social_tier)) + 
+  scale_y_log10() +
+  labs(x = "Date", y = "COVID-19 cases per 100K\n(log-scale)", colour = "Social tier") +
+  labs(
+    title   = "COVID-19 prevalence by socio-economic status", 
+    caption = paste0("Source: COVID-19 Response Data, Informatics, Surveillance,\nClinical and Outbreaks (DISCO) Team")
+    )
+```
 
 ![](README_files/figure-gfm/plots-1.png)<!-- -->
