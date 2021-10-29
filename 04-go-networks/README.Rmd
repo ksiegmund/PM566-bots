@@ -147,7 +147,7 @@ for (n in nodes0) {
     
     # Any association?
     test <- tryCatch(net$numFound > 0, error = function(e) e)
-    if (inherits(test, "error"))
+    if ((length(test) == 0) | inherits(test, "error"))
       next
       
     if (test)
