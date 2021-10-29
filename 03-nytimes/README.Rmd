@@ -1,0 +1,79 @@
+---
+output: 
+  github_document:
+    html_preview: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r get-data}
+library(httr)
+f <- function(offset = 0) {
+  GET(
+    url = "https://api.nytimes.com/",
+    path = "svc/search/v2/articlesearch.json",
+    query = list(
+      fq           = "health",
+      facet        = "true",
+      "begin_date" = gsub("-", "", Sys.Date() - 7),
+      "api-key"    = Sys.getenv("NYT_APIKEY"),
+      offset       = offset
+      )
+    )
+}
+
+# Retrieving 40 articles
+res1 <- f()
+res2 <- f(10)
+res3 <- f(20)
+res4 <- f(30)
+res5 <- f(40)
+res6 <- f(50)
+res7 <- f(60)
+res8 <- f(70)
+
+ans1 <- httr::content(res1)
+ans2 <- httr::content(res2)
+ans3 <- httr::content(res3)
+ans4 <- httr::content(res4)
+ans5 <- httr::content(res5)
+ans6 <- httr::content(res6)
+ans7 <- httr::content(res7)
+ans8 <- httr::content(res8)
+
+# Getting the keywords
+kw1 <- sapply(ans1$response$docs, function(x) sapply(x$keywords, "[[", "value"))
+kw2 <- sapply(ans2$response$docs, function(x) sapply(x$keywords, "[[", "value"))
+kw3 <- sapply(ans3$response$docs, function(x) sapply(x$keywords, "[[", "value"))
+kw4 <- sapply(ans4$response$docs, function(x) sapply(x$keywords, "[[", "value"))
+kw5 <- sapply(ans5$response$docs, function(x) sapply(x$keywords, "[[", "value"))
+kw6 <- sapply(ans6$response$docs, function(x) sapply(x$keywords, "[[", "value"))
+kw7 <- sapply(ans7$response$docs, function(x) sapply(x$keywords, "[[", "value"))
+kw8 <- sapply(ans8$response$docs, function(x) sapply(x$keywords, "[[", "value"))
+
+kws <- c(kw1, kw2, kw3, kw4, kw5, kw6, kw7, kw8)
+```
+
+# Top keywords in the last 7 days in the NYT
+
+Documentation here: https://developer.nytimes.com/.
+
+```{r preparing-data}
+library(ggplot2)
+library(ggwordcloud)
+
+words <- as.data.frame(table(unlist(kws)))
+
+stopifnot(length(words) > 1)
+
+ggwordcloud(words[, 1], words[, 2])
+```
+
+Table
+
+```{r}
+knitr::kable(words[-order(words[,2]),])
+```
+
