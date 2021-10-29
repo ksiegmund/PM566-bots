@@ -1,0 +1,174 @@
+---
+output: 
+  github_document:
+    html_preview: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+# Gene Ontology API
+
+Here we will try to draw a network of a random respiratory disease and a subset of possible
+other GO annotations associated with it. More information at http://api.geneontology.org/api.
+
+```{r get-data}
+# Preparing a function to use the GET method with the NYTimes API
+library(httr)
+f <- function() {
+
+  GET(
+    url = "http://api.geneontology.org/",
+    path = "api/search/entity/autocomplete/respiratory",
+    query = list(
+      category = "disease",
+      rows     = 1000,
+      start    = 0
+      )
+    )
+}
+
+maxtries <- 5
+ntries   <- 1
+while (ntries < maxtries) {
+  
+  res <- tryCatch(f(), error = function(e) e)
+  
+  # If it returns error
+  if (inherits(res, "error")) {
+    ntries <- ntries + 1
+    next
+  }
+  
+  # If the return code is not 200
+  if (httr::status_code(res) != 200) {
+    ntries <- ntries + 1
+    next
+  }
+  
+  break
+  
+}
+
+# Processing data, and taking a sample!
+ans <- httr::content(res)
+set.seed(sample.int(as.integer(Sys.time()), 1)) # Make sure it is random all the time!
+
+disease <- sample(ans$docs, size = 1)[[1L]]
+```
+
+Today's visualization will be of `r disease$match` (`r disease$id`)
+
+```{r querying-network}
+net_getter <- function(id, maxtries = 5, depth = 1) {
+
+  ntries   <- 1
+  while(ntries < maxtries) {
+    
+    res <- tryCatch(GET(
+      url = "http://api.geneontology.org/",
+      path = sprintf("api/graph/edges/from/%s", id),
+      query = list(depth=depth, direction="BOTH", entail="true")
+    ), error = function(e) e)
+    
+    # If it returns error
+    if (inherits(res, "error")) {
+      ntries <- ntries + 1
+      next
+    }
+    
+    # If the return code is not 200
+    if (httr::status_code(res) != 200) {
+      ntries <- ntries + 1
+      next
+    }
+    
+    break
+    
+  }
+  
+  httr::content(res)
+
+}
+
+edge_getter <- function(subject, object, maxtries = 5) {
+
+  ntries   <- 1
+  while(ntries < maxtries) {
+    
+    res <- tryCatch(GET(
+      url = "http://api.geneontology.org/",
+      path = sprintf("api/association/between/%s/%s", subject, object)
+    ), error = function(e) e)
+    
+    # If it returns error
+    if (inherits(res, "error")) {
+      ntries <- ntries + 1
+      next
+    }
+    
+    # If the return code is not 200
+    if (httr::status_code(res) != 200) {
+      ntries <- ntries + 1
+      next
+    }
+    
+    break
+    
+  }
+  
+  httr::content(res)
+
+}
+
+```
+
+We have the two functions we will use to retrieve the information. Let's apply them:
+
+```{r network}
+net0   <- net_getter(disease$id, depth = 1)
+nodes0 <- sample(net0$nodes, size = min(length(net0$nodes), 30L))
+nodes0 <- unique(sapply(nodes0, "[[", "id"))
+nodes0 <- gsub("/.+", "", nodes0)
+
+# Now, doing K searches
+edges <- NULL
+for (n in nodes0) {
+  
+  for (m in nodes0) {
+    
+    # No self ties
+    if (m == n)
+      next
+    
+    # Grabbing the ties
+    net <- edge_getter(n, m)
+    
+    # Any association?
+    if (net$numFound > 0)
+      edges <- rbind(edges, data.frame(source = n, target = m, w = net$numFound))
+    
+  }
+  
+}
+```
+
+With the network data, we can now draw a graph
+
+```{r fig.cap="Graph including ego"}
+library(netplot)
+library(igraph)
+graph <- graph_from_data_frame(
+  d = edges,
+  vertices = data.frame(nodes0, stringsAsFactors = FALSE)
+)
+print(nplot(graph))
+```
+
+
+```{r fig.cap="Graph excluding ego"}
+graph_sub <- induced_subgraph(graph, setdiff(nodes0, disease$id))
+print(nplot(graph_sub))
+```
+

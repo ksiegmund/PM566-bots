@@ -1,0 +1,36 @@
+name: Gene Ontology Networks
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * *' # This will happen once a day at 00 hours.
+
+jobs:
+  build:
+    runs-on: Ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Container
+        run: docker pull rocker/tidyverse:4.1.0
+
+      ##################################################################
+      # YOU ONLY NEED TO CHANGE THIS BIT -------------------------------
+      - name: Render
+        run:  |
+          cd 04-go-networks
+          docker run -v$(pwd):/home/report -w/home/report \
+            rocker/tidyverse:4.1.0 \
+            Rscript -e 'install.packages("netplot");rmarkdown::render("README.Rmd")'
+      ##################################################################
+
+      - name: Commit results
+        run: |
+          cd 04-go-networks
+          git add README_files/figure-gfm/* 
+          git config --local user.name "$GITHUB_ACTOR"
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git commit -a -m 'Updating the GO Networks report' || echo Nothing has changed
+          git push origin || echo "No changes to commit" 
