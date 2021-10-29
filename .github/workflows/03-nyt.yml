@@ -12,6 +12,8 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
+      - with: # Set the secret as an input
+          NYT_APIKEY: ${{ NYT_APIKEY }}
 
       - name: Container
         run: docker pull rocker/tidyverse:4.1.0
@@ -22,6 +24,7 @@ jobs:
         run:  |
           cd 03-nyt
           docker run -v$(pwd):/home/report -w/home/report \
+            -e NYT_APIKEY=NYT_APIKEY \
             rocker/tidyverse:4.1.0 \
             Rscript -e 'install.packages("ggwordcloud");rmarkdown::render("README.Rmd")'
       ##################################################################
