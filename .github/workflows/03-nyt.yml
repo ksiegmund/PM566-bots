@@ -12,8 +12,6 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
-      - with: # Set the secret as an input
-          NYT_APIKEY: ${{ NYT_APIKEY }}
 
       - name: Container
         run: docker pull rocker/tidyverse:4.1.0
@@ -21,6 +19,8 @@ jobs:
       ##################################################################
       # YOU ONLY NEED TO CHANGE THIS BIT -------------------------------
       - name: Render
+      - env: # Set the secret as an input
+          NYT_APIKEY: ${{ secrets.NYT_APIKEY }}
         run:  |
           cd 03-nyt
           docker run -v$(pwd):/home/report -w/home/report \
