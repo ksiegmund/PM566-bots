@@ -8,7 +8,14 @@ output:
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
+# NYTimes health news
+
+The following is an example of how to use the [NYTimes API](https://developer.nytimes.com/) to get a list of articles
+related to a particular term. Here we are searching articles that include the term
+`"health"`, and that were published up to seven days ago since `r Sys.Date()`.
+
 ```{r get-data}
+# Preparing a function to use the GET method with the NYTimes API
 library(httr)
 f <- function(offset = 0) {
   GET(
@@ -25,55 +32,59 @@ f <- function(offset = 0) {
 }
 
 # Retrieving 40 articles
-res1 <- f()
-res2 <- f(10)
-res3 <- f(20)
-res4 <- f(30)
-res5 <- f(40)
-res6 <- f(50)
-res7 <- f(60)
-res8 <- f(70)
-
-ans1 <- httr::content(res1)
-ans2 <- httr::content(res2)
-ans3 <- httr::content(res3)
-ans4 <- httr::content(res4)
-ans5 <- httr::content(res5)
-ans6 <- httr::content(res6)
-ans7 <- httr::content(res7)
-ans8 <- httr::content(res8)
-
-# Getting the keywords
-kw1 <- sapply(ans1$response$docs, function(x) sapply(x$keywords, "[[", "value"))
-kw2 <- sapply(ans2$response$docs, function(x) sapply(x$keywords, "[[", "value"))
-kw3 <- sapply(ans3$response$docs, function(x) sapply(x$keywords, "[[", "value"))
-kw4 <- sapply(ans4$response$docs, function(x) sapply(x$keywords, "[[", "value"))
-kw5 <- sapply(ans5$response$docs, function(x) sapply(x$keywords, "[[", "value"))
-kw6 <- sapply(ans6$response$docs, function(x) sapply(x$keywords, "[[", "value"))
-kw7 <- sapply(ans7$response$docs, function(x) sapply(x$keywords, "[[", "value"))
-kw8 <- sapply(ans8$response$docs, function(x) sapply(x$keywords, "[[", "value"))
-
-kws <- c(kw1, kw2, kw3, kw4, kw5, kw6, kw7, kw8)
+keywords <- NULL
+maxtries <- 5
+niters   <- 10
+i        <- 1
+ntries   <- 1
+while ((ntries < maxtries) && (i <= niters)) {
+  
+  res <- tryCatch(f(10 * (i-1)), error = function(e) e)
+  
+  # If it returns error
+  if (inherits(res, "error")) {
+    ntries <- ntries + 1
+    next
+  }
+  
+  # If the return code is not 200
+  if (httr::status_code(res) != 200) {
+    ntries <- ntries + 1
+    next
+  }
+  
+  # Parsing the data
+  ans <- httr::content(res)
+  keywords <- c(
+    keywords,
+    sapply(ans$response$docs, function(x) sapply(x$keywords, "[[", "value"))
+    )
+  
+  # Incrementing and restarting
+  i      <- i + 1
+  ntries <- 1L
+  
+}
 ```
 
-# Top keywords in the last 7 days in the NYT
-
-Documentation here: https://developer.nytimes.com/.
+Now that we got the data, we can proceed to do some visualization
 
 ```{r preparing-data}
 library(ggplot2)
 library(ggwordcloud)
 
-words <- as.data.frame(table(unlist(kws)))
+keywords <- as.data.frame(table(unlist(keywords)))
 
-stopifnot(nrow(words) > 1)
-
-ggwordcloud(words[, 1], words[, 2])
+# Just to make sure that we were able to download info!
+stopifnot(nrow(keywords) > 1)
+ggwordcloud(keywords[, 1], keywords[, 2])
 ```
 
-Table
+Finally, a table with the top 20 articles
 
 ```{r}
-knitr::kable(words[-order(words[,2]),])
+tab <- keywords[order(-keywords[,2]),][1:20,]
+colnames(tab) <- c("Keyword", "# Articles")
+knitr::kable(tab, row.names = FALSE)
 ```
 

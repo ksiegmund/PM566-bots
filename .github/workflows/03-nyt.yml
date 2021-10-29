@@ -24,7 +24,7 @@ jobs:
         run:  |
           cd 03-nytimes
           docker run -v$(pwd):/home/report -w/home/report \
-            -e NYT_APIKEY=NYT_APIKEY \
+            -e NYT_APIKEY=$NYT_APIKEY \
             rocker/tidyverse:4.1.0 \
             Rscript -e 'install.packages("ggwordcloud");rmarkdown::render("README.Rmd")'
       ##################################################################
