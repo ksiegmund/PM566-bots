@@ -32,7 +32,8 @@ jobs:
       - name: Commit results
         run: |
           cd 03-nytimes
-          git add README_files/figure-gfm/* 
+          git add README_files/figure-gfm/*
+          git add README.md
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git commit -a -m 'Updating the NYT report' || echo Nothing has changed
