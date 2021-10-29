@@ -146,10 +146,17 @@ for (n in nodes0) {
     net <- edge_getter(n, m)
     
     # Any association?
-    if (net$numFound > 0)
+    test <- tryCatch(net$numFound > 0, error = function(e) e)
+    if (inherits(test, "error")
+      next
+      
+    if (test)
       edges <- rbind(edges, data.frame(source = n, target = m, w = net$numFound))
     
   }
+  
+  # Progress bar
+  cat("|")
   
 }
 ```
