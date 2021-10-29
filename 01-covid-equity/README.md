@@ -2,7 +2,8 @@
 ``` r
 library(data.table)
 library(ggplot2)
-library(forcats)
+# library(forcats)
+library(magrittr)
 
 url_equity <- "https://data.chhs.ca.gov/dataset/f88f9d7f-635d-4334-9dac-4ce773afe4e5/resource/11fa525e-1c7b-4cf5-99e1-d4141ea590e4/download/covid19case_rate_by_social_det.csv"
 
@@ -36,3 +37,5 @@ dat[social_det == "income"] %>%
 ```
 
 ![](README_files/figure-gfm/plots-1.png)<!-- -->
+
+This is a live example using 0.2931298.
