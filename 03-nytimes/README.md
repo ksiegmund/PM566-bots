@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-10-29.
+2021-11-01.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -85,23 +85,23 @@ knitr::kable(tab, row.names = FALSE)
 
 | Keyword                                    | \# Articles |
 |:-------------------------------------------|------------:|
+| Coronavirus (2019-nCoV)                    |          30 |
 | Vaccination and Immunization               |          30 |
-| American Families Plan (2021)              |          20 |
-| Biden, Joseph R Jr                         |          20 |
-| China                                      |          20 |
-| Coronavirus (2019-nCoV)                    |          20 |
-| Democratic Party                           |          20 |
-| Federal Taxes (US)                         |          20 |
-| Manchin, Joe III                           |          20 |
-| Senate                                     |          20 |
 | United States Politics and Government      |          20 |
-| Alternative and Renewable Energy           |          10 |
-| American Jobs Plan (2021)                  |          10 |
+| Abortion                                   |          10 |
 | Atlanta Braves                             |          10 |
 | Baseball                                   |          10 |
-| Burton, Bill                               |          10 |
 | Centers for Disease Control and Prevention |          10 |
-| Children and Childhood                     |          10 |
-| Classified Information and State Secrets   |          10 |
-| Coronavirus Reopenings                     |          10 |
-| Corporate Taxes                            |          10 |
+| China                                      |          10 |
+| Constitution (US)                          |          10 |
+| de Blasio, Bill                            |          10 |
+| Decisions and Verdicts                     |          10 |
+| Democratic Party                           |          10 |
+| Demonstrations, Protests and Riots         |          10 |
+| Espionage and Intelligence Services        |          10 |
+| Finances                                   |          10 |
+| Group of Twenty                            |          10 |
+| Havana Syndrome                            |          10 |
+| Health and Mental Hygiene Department (NYC) |          10 |
+| Homesick (Movie)                           |          10 |
+| Houston Astros                             |          10 |
