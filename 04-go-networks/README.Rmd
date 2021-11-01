@@ -166,9 +166,10 @@ With the network data, we can now draw a graph
 ```{r fig.cap="Graph including ego"}
 library(netplot)
 library(igraph)
+
 graph <- graph_from_data_frame(
-  d = edges,
-  vertices = data.frame(nodes0, stringsAsFactors = FALSE)
+  d        = edges,
+  vertices = data.frame(unique(nodes0), stringsAsFactors = FALSE)
 )
 print(nplot(graph))
 ```
