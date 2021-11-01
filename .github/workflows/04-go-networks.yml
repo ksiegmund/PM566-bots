@@ -23,7 +23,7 @@ jobs:
           cd 04-go-networks
           docker run -v$(pwd):/home/report -w/home/report \
             rocker/tidyverse:4.1.0 \
-            Rscript -e 'install.packages("netplot");rmarkdown::render("README.Rmd")'
+            Rscript -e 'system("apt-get update && apt-get install -y --no-install-recommends libglpk-dev");install.packages("netplot");rmarkdown::render("README.Rmd")'
       ##################################################################
 
       - name: Commit results
