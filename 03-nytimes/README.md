@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-11-01.
+2021-11-08.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                    | \# Articles |
-|:-------------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                    |          30 |
-| Vaccination and Immunization               |          30 |
-| United States Politics and Government      |          20 |
-| Abortion                                   |          10 |
-| Atlanta Braves                             |          10 |
-| Baseball                                   |          10 |
-| Centers for Disease Control and Prevention |          10 |
-| China                                      |          10 |
-| Constitution (US)                          |          10 |
-| de Blasio, Bill                            |          10 |
-| Decisions and Verdicts                     |          10 |
-| Democratic Party                           |          10 |
-| Demonstrations, Protests and Riots         |          10 |
-| Espionage and Intelligence Services        |          10 |
-| Finances                                   |          10 |
-| Group of Twenty                            |          10 |
-| Havana Syndrome                            |          10 |
-| Health and Mental Hygiene Department (NYC) |          10 |
-| Homesick (Movie)                           |          10 |
-| Houston Astros                             |          10 |
+| Keyword                              | \# Articles |
+|:-------------------------------------|------------:|
+| Coronavirus (2019-nCoV)              |          30 |
+| Vaccination and Immunization         |          20 |
+| Anthrax                              |          10 |
+| AstraZeneca PLC                      |          10 |
+| Broad Institute                      |          10 |
+| Cell (Journal)                       |          10 |
+| Content Type: Personal Profile       |          10 |
+| Content Type: Service                |          10 |
+| Crispr (DNA)                         |          10 |
+| de Blasio, Bill                      |          10 |
+| Drugs (Pharmaceuticals)              |          10 |
+| Emergent BioSolutions Inc            |          10 |
+| Fire Department (NYC)                |          10 |
+| Food and Drug Administration         |          10 |
+| Football                             |          10 |
+| Genetic Engineering                  |          10 |
+| Genetics and Heredity                |          10 |
+| Gifts                                |          10 |
+| Government Contracts and Procurement |          10 |
+| Great Britain                        |          10 |
