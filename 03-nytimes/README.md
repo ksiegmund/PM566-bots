@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-11-08.
+2021-11-15.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                              | \# Articles |
-|:-------------------------------------|------------:|
-| Coronavirus (2019-nCoV)              |          30 |
-| Vaccination and Immunization         |          20 |
-| Anthrax                              |          10 |
-| AstraZeneca PLC                      |          10 |
-| Broad Institute                      |          10 |
-| Cell (Journal)                       |          10 |
-| Content Type: Personal Profile       |          10 |
-| Content Type: Service                |          10 |
-| Crispr (DNA)                         |          10 |
-| de Blasio, Bill                      |          10 |
-| Drugs (Pharmaceuticals)              |          10 |
-| Emergent BioSolutions Inc            |          10 |
-| Fire Department (NYC)                |          10 |
-| Food and Drug Administration         |          10 |
-| Football                             |          10 |
-| Genetic Engineering                  |          10 |
-| Genetics and Heredity                |          10 |
-| Gifts                                |          10 |
-| Government Contracts and Procurement |          10 |
-| Great Britain                        |          10 |
+| Keyword                      | \# Articles |
+|:-----------------------------|------------:|
+| Coronavirus (2019-nCoV)      |          60 |
+| Vaccination and Immunization |          40 |
+| Labor and Jobs               |          20 |
+| Politics and Government      |          20 |
+| United States                |          20 |
+| Advertising and Marketing    |          10 |
+| Archives and Records         |          10 |
+| audio-neutral-informative    |          10 |
+| BioNTech SE                  |          10 |
+| Censorship                   |          10 |
+| Children and Childhood       |          10 |
+| China                        |          10 |
+| Collins, Francis S           |          10 |
+| Communist Party of China     |          10 |
+| Content Type: Service        |          10 |
+| Deaths (Obituaries)          |          10 |
+| Epidemics                    |          10 |
+| Exercise                     |          10 |
+| Factories and Manufacturing  |          10 |
+| Fashion and Apparel          |          10 |
