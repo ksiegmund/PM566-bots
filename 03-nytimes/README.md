@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-11-15.
+2021-11-22.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                      | \# Articles |
-|:-----------------------------|------------:|
-| Coronavirus (2019-nCoV)      |          60 |
-| Vaccination and Immunization |          40 |
-| Labor and Jobs               |          20 |
-| Politics and Government      |          20 |
-| United States                |          20 |
-| Advertising and Marketing    |          10 |
-| Archives and Records         |          10 |
-| audio-neutral-informative    |          10 |
-| BioNTech SE                  |          10 |
-| Censorship                   |          10 |
-| Children and Childhood       |          10 |
-| China                        |          10 |
-| Collins, Francis S           |          10 |
-| Communist Party of China     |          10 |
-| Content Type: Service        |          10 |
-| Deaths (Obituaries)          |          10 |
-| Epidemics                    |          10 |
-| Exercise                     |          10 |
-| Factories and Manufacturing  |          10 |
-| Fashion and Apparel          |          10 |
+| Keyword                                    | \# Articles |
+|:-------------------------------------------|------------:|
+| Biden, Joseph R Jr                         |          20 |
+| Centers for Disease Control and Prevention |          20 |
+| United States Economy                      |          20 |
+| United States Politics and Government      |          20 |
+| Adhesives                                  |          10 |
+| American Families Plan (2021)              |          10 |
+| Bulgaria                                   |          10 |
+| Careers and Professions                    |          10 |
+| China                                      |          10 |
+| Coaches (Non-Sports)                       |          10 |
+| Commerce Department                        |          10 |
+| Compost                                    |          10 |
+| Content Type: Service                      |          10 |
+| Defense and Military Forces                |          10 |
+| Defense Department                         |          10 |
+| Democratic Party                           |          10 |
+| DNA (Deoxyribonucleic Acid)                |          10 |
+| Exercise                                   |          10 |
+| Forensic Science                           |          10 |
+| Fruit                                      |          10 |
