@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-11-22.
+2021-11-29.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                    | \# Articles |
-|:-------------------------------------------|------------:|
-| Biden, Joseph R Jr                         |          20 |
-| Centers for Disease Control and Prevention |          20 |
-| United States Economy                      |          20 |
-| United States Politics and Government      |          20 |
-| Adhesives                                  |          10 |
-| American Families Plan (2021)              |          10 |
-| Bulgaria                                   |          10 |
-| Careers and Professions                    |          10 |
-| China                                      |          10 |
-| Coaches (Non-Sports)                       |          10 |
-| Commerce Department                        |          10 |
-| Compost                                    |          10 |
-| Content Type: Service                      |          10 |
-| Defense and Military Forces                |          10 |
-| Defense Department                         |          10 |
-| Democratic Party                           |          10 |
-| DNA (Deoxyribonucleic Acid)                |          10 |
-| Exercise                                   |          10 |
-| Forensic Science                           |          10 |
-| Fruit                                      |          10 |
+| Keyword                           | \# Articles |
+|:----------------------------------|------------:|
+| Coronavirus (2019-nCoV)           |          30 |
+| Disease Rates                     |          20 |
+| Europe                            |          20 |
+| Polls and Public Opinion          |          20 |
+| South Africa                      |          20 |
+| Travel Warnings                   |          20 |
+| United States                     |          20 |
+| Vaccination and Immunization      |          20 |
+| Abortion                          |          10 |
+| AFRICA                            |          10 |
+| Anxiety and Stress                |          10 |
+| Birth Control and Family Planning |          10 |
+| Black People                      |          10 |
+| Blacks                            |          10 |
+| Blue Origin                       |          10 |
+| Butchers and Butchering           |          10 |
+| Conservatism (US Politics)        |          10 |
+| Coronavirus Delta Variant         |          10 |
+| Coronavirus Omicron Variant       |          10 |
+| Deer                              |          10 |
