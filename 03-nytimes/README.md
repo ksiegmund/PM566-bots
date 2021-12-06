@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-11-29.
+2021-12-06.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                           | \# Articles |
-|:----------------------------------|------------:|
-| Coronavirus (2019-nCoV)           |          30 |
-| Disease Rates                     |          20 |
-| Europe                            |          20 |
-| Polls and Public Opinion          |          20 |
-| South Africa                      |          20 |
-| Travel Warnings                   |          20 |
-| United States                     |          20 |
-| Vaccination and Immunization      |          20 |
-| Abortion                          |          10 |
-| AFRICA                            |          10 |
-| Anxiety and Stress                |          10 |
-| Birth Control and Family Planning |          10 |
-| Black People                      |          10 |
-| Blacks                            |          10 |
-| Blue Origin                       |          10 |
-| Butchers and Butchering           |          10 |
-| Conservatism (US Politics)        |          10 |
-| Coronavirus Delta Variant         |          10 |
-| Coronavirus Omicron Variant       |          10 |
-| Deer                              |          10 |
+| Keyword                         | \# Articles |
+|:--------------------------------|------------:|
+| Coronavirus (2019-nCoV)         |          30 |
+| Coronavirus Delta Variant       |          30 |
+| Coronavirus Omicron Variant     |          30 |
+| Abortion                        |          10 |
+| Anxiety and Stress              |          10 |
+| Asylum, Right of                |          10 |
+| Biden, Joseph R Jr              |          10 |
+| Birds                           |          10 |
+| Buddhism                        |          10 |
+| Children and Childhood          |          10 |
+| Chokshi, Dave A                 |          10 |
+| Conservation of Resources       |          10 |
+| Contact Tracing (Public Health) |          10 |
+| Content Type: Service           |          10 |
+| Disease Rates                   |          10 |
+| El-Sadr, Wafaa                  |          10 |
+| Global Warming                  |          10 |
+| Homeland Security Department    |          10 |
+| Illegal Immigration             |          10 |
+| Immigration and Emigration      |          10 |
