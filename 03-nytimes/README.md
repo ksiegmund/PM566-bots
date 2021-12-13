@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-12-06.
+2021-12-13.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                         | \# Articles |
-|:--------------------------------|------------:|
-| Coronavirus (2019-nCoV)         |          30 |
-| Coronavirus Delta Variant       |          30 |
-| Coronavirus Omicron Variant     |          30 |
-| Abortion                        |          10 |
-| Anxiety and Stress              |          10 |
-| Asylum, Right of                |          10 |
-| Biden, Joseph R Jr              |          10 |
-| Birds                           |          10 |
-| Buddhism                        |          10 |
-| Children and Childhood          |          10 |
-| Chokshi, Dave A                 |          10 |
-| Conservation of Resources       |          10 |
-| Contact Tracing (Public Health) |          10 |
-| Content Type: Service           |          10 |
-| Disease Rates                   |          10 |
-| El-Sadr, Wafaa                  |          10 |
-| Global Warming                  |          10 |
-| Homeland Security Department    |          10 |
-| Illegal Immigration             |          10 |
-| Immigration and Emigration      |          10 |
+| Keyword                               | \# Articles |
+|:--------------------------------------|------------:|
+| Discrimination                        |          20 |
+| Politics and Government               |          20 |
+| United States Politics and Government |          20 |
+| Wages and Salaries                    |          20 |
+| Women and Girls                       |          20 |
+| Abortion                              |          10 |
+| Aduba, Uzo                            |          10 |
+| Arkoosh, Val                          |          10 |
+| Beauty (Concept)                      |          10 |
+| Biden, Joseph R Jr                    |          10 |
+| Black People                          |          10 |
+| Blacks                                |          10 |
+| Border Patrol (US)                    |          10 |
+| Braskem SA                            |          10 |
+| Car Services and Livery Cabs          |          10 |
+| Colleges and Universities             |          10 |
+| Columbia University                   |          10 |
+| Compensation for Damages (Law)        |          10 |
+| Customs and Border Protection (US)    |          10 |
+| Decisions and Verdicts                |          10 |
