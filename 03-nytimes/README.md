@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-12-13.
+2021-12-20.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -85,23 +85,23 @@ knitr::kable(tab, row.names = FALSE)
 
 | Keyword                               | \# Articles |
 |:--------------------------------------|------------:|
-| Discrimination                        |          20 |
-| Politics and Government               |          20 |
-| United States Politics and Government |          20 |
-| Wages and Salaries                    |          20 |
-| Women and Girls                       |          20 |
+| United States Politics and Government |          30 |
+| Coronavirus (2019-nCoV)               |          20 |
+| Drugs (Pharmaceuticals)               |          20 |
 | Abortion                              |          10 |
-| Aduba, Uzo                            |          10 |
-| Arkoosh, Val                          |          10 |
-| Beauty (Concept)                      |          10 |
+| Afghanistan                           |          10 |
+| Afghanistan War (2001- )              |          10 |
+| Appointments and Executive Changes    |          10 |
 | Biden, Joseph R Jr                    |          10 |
-| Black People                          |          10 |
-| Blacks                                |          10 |
-| Border Patrol (US)                    |          10 |
-| Braskem SA                            |          10 |
-| Car Services and Livery Cabs          |          10 |
-| Colleges and Universities             |          10 |
-| Columbia University                   |          10 |
-| Compensation for Damages (Law)        |          10 |
-| Customs and Border Protection (US)    |          10 |
-| Decisions and Verdicts                |          10 |
+| Califf, Robert M                      |          10 |
+| California                            |          10 |
+| Cervarix (Vaccine)                    |          10 |
+| Cervical Cancer                       |          10 |
+| Computers and the Internet            |          10 |
+| Consumer Protection                   |          10 |
+| Dating and Relationships              |          10 |
+| Deaths (Obituaries)                   |          10 |
+| Democratic Party                      |          10 |
+| Economic Conditions and Trends        |          10 |
+| Embargoes and Sanctions               |          10 |
+| Entrepreneurship                      |          10 |
