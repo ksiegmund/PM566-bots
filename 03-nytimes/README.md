@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-12-20.
+2021-12-27.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                               | \# Articles |
-|:--------------------------------------|------------:|
-| United States Politics and Government |          30 |
-| Coronavirus (2019-nCoV)               |          20 |
-| Drugs (Pharmaceuticals)               |          20 |
-| Abortion                              |          10 |
-| Afghanistan                           |          10 |
-| Afghanistan War (2001- )              |          10 |
-| Appointments and Executive Changes    |          10 |
-| Biden, Joseph R Jr                    |          10 |
-| Califf, Robert M                      |          10 |
-| California                            |          10 |
-| Cervarix (Vaccine)                    |          10 |
-| Cervical Cancer                       |          10 |
-| Computers and the Internet            |          10 |
-| Consumer Protection                   |          10 |
-| Dating and Relationships              |          10 |
-| Deaths (Obituaries)                   |          10 |
-| Democratic Party                      |          10 |
-| Economic Conditions and Trends        |          10 |
-| Embargoes and Sanctions               |          10 |
-| Entrepreneurship                      |          10 |
+| Keyword                                | \# Articles |
+|:---------------------------------------|------------:|
+| Coronavirus (2019-nCoV)                |          50 |
+| Coronavirus Omicron Variant            |          40 |
+| United States                          |          30 |
+| Great Britain                          |          20 |
+| Quarantine (Life and Culture)          |          20 |
+| Vaccination and Immunization           |          20 |
+| Alternative and Complementary Medicine |          10 |
+| And Just Like That … (TV Program)      |          10 |
+| Anxiety and Stress                     |          10 |
+| Canada                                 |          10 |
+| Christmas                              |          10 |
+| Colleges and Universities              |          10 |
+| County Mayo (Ireland)                  |          10 |
+| County Offaly (Ireland)                |          10 |
+| Dating and Relationships               |          10 |
+| Depression (Mental)                    |          10 |
+| E-Learning                             |          10 |
+| Education (K-12)                       |          10 |
+| Elder Abuse                            |          10 |
+| Elder Care                             |          10 |
