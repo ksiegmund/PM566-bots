@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2021-12-27.
+2022-01-03.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                | \# Articles |
-|:---------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                |          50 |
-| Coronavirus Omicron Variant            |          40 |
-| United States                          |          30 |
-| Great Britain                          |          20 |
-| Quarantine (Life and Culture)          |          20 |
-| Vaccination and Immunization           |          20 |
-| Alternative and Complementary Medicine |          10 |
-| And Just Like That … (TV Program)      |          10 |
-| Anxiety and Stress                     |          10 |
-| Canada                                 |          10 |
-| Christmas                              |          10 |
-| Colleges and Universities              |          10 |
-| County Mayo (Ireland)                  |          10 |
-| County Offaly (Ireland)                |          10 |
-| Dating and Relationships               |          10 |
-| Depression (Mental)                    |          10 |
-| E-Learning                             |          10 |
-| Education (K-12)                       |          10 |
-| Elder Abuse                            |          10 |
-| Elder Care                             |          10 |
+| Keyword                                        | \# Articles |
+|:-----------------------------------------------|------------:|
+| Coronavirus (2019-nCoV)                        |          30 |
+| New York City                                  |          30 |
+| Adams, Eric L                                  |          20 |
+| Content Type: Service                          |          20 |
+| Labor and Jobs                                 |          20 |
+| Advertising and Marketing                      |          10 |
+| Belt Parkway (NY)                              |          10 |
+| Black People                                   |          10 |
+| Blacks                                         |          10 |
+| Brooklyn-Queens Expressway                     |          10 |
+| Cannabis Foods and Products                    |          10 |
+| Clinical Trials                                |          10 |
+| College Football Playoff National Championship |          10 |
+| Consumer Price Index                           |          10 |
+| Content Type: Personal Profile                 |          10 |
+| Cross Bronx Expressway (Bronx, NY)             |          10 |
+| de Blasio, Bill                                |          10 |
+| Democratic Party                               |          10 |
+| Diet and Nutrition                             |          10 |
+| ECS Brands Ltd                                 |          10 |
