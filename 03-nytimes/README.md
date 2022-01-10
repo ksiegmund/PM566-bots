@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-01-03.
+2022-01-10.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                        | \# Articles |
-|:-----------------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                        |          30 |
-| New York City                                  |          30 |
-| Adams, Eric L                                  |          20 |
-| Content Type: Service                          |          20 |
-| Labor and Jobs                                 |          20 |
-| Advertising and Marketing                      |          10 |
-| Belt Parkway (NY)                              |          10 |
-| Black People                                   |          10 |
-| Blacks                                         |          10 |
-| Brooklyn-Queens Expressway                     |          10 |
-| Cannabis Foods and Products                    |          10 |
-| Clinical Trials                                |          10 |
-| College Football Playoff National Championship |          10 |
-| Consumer Price Index                           |          10 |
-| Content Type: Personal Profile                 |          10 |
-| Cross Bronx Expressway (Bronx, NY)             |          10 |
-| de Blasio, Bill                                |          10 |
-| Democratic Party                               |          10 |
-| Diet and Nutrition                             |          10 |
-| ECS Brands Ltd                                 |          10 |
+| Keyword                                    | \# Articles |
+|:-------------------------------------------|------------:|
+| Coronavirus (2019-nCoV)                    |          70 |
+| United States                              |          40 |
+| Coronavirus Omicron Variant                |          30 |
+| Australia                                  |          20 |
+| Australian Open (Tennis)                   |          20 |
+| Disease Rates                              |          20 |
+| Djokovic, Novak                            |          20 |
+| Tennis                                     |          20 |
+| Vaccination and Immunization               |          20 |
+| Airlines and Airplanes                     |          10 |
+| Appointments and Executive Changes         |          10 |
+| audio-neutral-informative                  |          10 |
+| Black People                               |          10 |
+| Blacks                                     |          10 |
+| Boards of Directors                        |          10 |
+| Canada                                     |          10 |
+| Cancun (Mexico)                            |          10 |
+| Centers for Disease Control and Prevention |          10 |
+| Corporations                               |          10 |
+| Fines (Penalties)                          |          10 |
