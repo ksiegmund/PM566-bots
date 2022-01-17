@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-01-10.
+2022-01-17.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -85,23 +85,23 @@ knitr::kable(tab, row.names = FALSE)
 
 | Keyword                                    | \# Articles |
 |:-------------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                    |          70 |
-| United States                              |          40 |
+| Coronavirus (2019-nCoV)                    |          40 |
 | Coronavirus Omicron Variant                |          30 |
-| Australia                                  |          20 |
-| Australian Open (Tennis)                   |          20 |
-| Disease Rates                              |          20 |
-| Djokovic, Novak                            |          20 |
-| Tennis                                     |          20 |
-| Vaccination and Immunization               |          20 |
-| Airlines and Airplanes                     |          10 |
+| Biden, Joseph R Jr                         |          20 |
+| Federal Reserve System                     |          20 |
+| Tests (Medical)                            |          20 |
+| Abbott Laboratories                        |          10 |
+| American Rescue Plan (2021)                |          10 |
 | Appointments and Executive Changes         |          10 |
-| audio-neutral-informative                  |          10 |
-| Black People                               |          10 |
-| Blacks                                     |          10 |
-| Boards of Directors                        |          10 |
-| Canada                                     |          10 |
-| Cancun (Mexico)                            |          10 |
+| Banking and Financial Institutions         |          10 |
+| Bergen County (NJ)                         |          10 |
 | Centers for Disease Control and Prevention |          10 |
-| Corporations                               |          10 |
-| Fines (Penalties)                          |          10 |
+| Centers for Medicare and Medicaid Services |          10 |
+| Cook, Lisa D                               |          10 |
+| Coronavirus Risks and Safety Concerns      |          10 |
+| Endangered and Extinct Species             |          10 |
+| Fires and Firefighters                     |          10 |
+| Global Warming                             |          10 |
+| Greenhouse Gas Emissions                   |          10 |
+| Harvard Business School                    |          10 |
+| Health Insurance and Managed Care          |          10 |
