@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-01-17.
+2022-01-24.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                    | \# Articles |
-|:-------------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                    |          40 |
-| Coronavirus Omicron Variant                |          30 |
-| Biden, Joseph R Jr                         |          20 |
-| Federal Reserve System                     |          20 |
-| Tests (Medical)                            |          20 |
-| Abbott Laboratories                        |          10 |
-| American Rescue Plan (2021)                |          10 |
-| Appointments and Executive Changes         |          10 |
-| Banking and Financial Institutions         |          10 |
-| Bergen County (NJ)                         |          10 |
-| Centers for Disease Control and Prevention |          10 |
-| Centers for Medicare and Medicaid Services |          10 |
-| Cook, Lisa D                               |          10 |
-| Coronavirus Risks and Safety Concerns      |          10 |
-| Endangered and Extinct Species             |          10 |
-| Fires and Firefighters                     |          10 |
-| Global Warming                             |          10 |
-| Greenhouse Gas Emissions                   |          10 |
-| Harvard Business School                    |          10 |
-| Health Insurance and Managed Care          |          10 |
+| Keyword                                  | \# Articles |
+|:-----------------------------------------|------------:|
+| China                                    |          40 |
+| Coronavirus (2019-nCoV)                  |          40 |
+| Coronavirus Omicron Variant              |          20 |
+| Human Rights and Human Rights Violations |          20 |
+| internal-sub-only-nl                     |          20 |
+| Olympic Games (2022)                     |          20 |
+| Politics and Government                  |          20 |
+| Abortion                                 |          10 |
+| Basketball                               |          10 |
+| Budgets and Budgeting                    |          10 |
+| Citizen Lab                              |          10 |
+| Computer Security                        |          10 |
+| Coronavirus Delta Variant                |          10 |
+| de Blasio, Bill                          |          10 |
+| Death and Dying                          |          10 |
+| Disease Rates                            |          10 |
+| Elections, Governors                     |          10 |
+| Families and Family Life                 |          10 |
+| Golden State Warriors                    |          10 |
+| Health Insurance and Managed Care        |          10 |
