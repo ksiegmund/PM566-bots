@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-01-24.
+2022-01-31.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                  | \# Articles |
-|:-----------------------------------------|------------:|
-| China                                    |          40 |
-| Coronavirus (2019-nCoV)                  |          40 |
-| Coronavirus Omicron Variant              |          20 |
-| Human Rights and Human Rights Violations |          20 |
-| internal-sub-only-nl                     |          20 |
-| Olympic Games (2022)                     |          20 |
-| Politics and Government                  |          20 |
-| Abortion                                 |          10 |
-| Basketball                               |          10 |
-| Budgets and Budgeting                    |          10 |
-| Citizen Lab                              |          10 |
-| Computer Security                        |          10 |
-| Coronavirus Delta Variant                |          10 |
-| de Blasio, Bill                          |          10 |
-| Death and Dying                          |          10 |
-| Disease Rates                            |          10 |
-| Elections, Governors                     |          10 |
-| Families and Family Life                 |          10 |
-| Golden State Warriors                    |          10 |
-| Health Insurance and Managed Care        |          10 |
+| Keyword                     | \# Articles |
+|:----------------------------|------------:|
+| Coronavirus (2019-nCoV)     |          20 |
+| Great Britain               |          20 |
+| Adams, Eric L               |          10 |
+| Africa                      |          10 |
+| Attacks on Police           |          10 |
+| Babies and Infants          |          10 |
+| Blackwells Capital LLC      |          10 |
+| Breast Cancer               |          10 |
+| Canada                      |          10 |
+| Castro, Xiomara             |          10 |
+| Cherry Lane Theater         |          10 |
+| Content Type: Service       |          10 |
+| Coronavirus Omicron Variant |          10 |
+| Crime and Criminals         |          10 |
+| Doctors                     |          10 |
+| Edelman, Alex (Comedian)    |          10 |
+| England                     |          10 |
+| Europe                      |          10 |
+| Federal Reserve System      |          10 |
+| Festivals                   |          10 |
