@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-01-31.
+2022-02-07.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                     | \# Articles |
-|:----------------------------|------------:|
-| Coronavirus (2019-nCoV)     |          20 |
-| Great Britain               |          20 |
-| Adams, Eric L               |          10 |
-| Africa                      |          10 |
-| Attacks on Police           |          10 |
-| Babies and Infants          |          10 |
-| Blackwells Capital LLC      |          10 |
-| Breast Cancer               |          10 |
-| Canada                      |          10 |
-| Castro, Xiomara             |          10 |
-| Cherry Lane Theater         |          10 |
-| Content Type: Service       |          10 |
-| Coronavirus Omicron Variant |          10 |
-| Crime and Criminals         |          10 |
-| Doctors                     |          10 |
-| Edelman, Alex (Comedian)    |          10 |
-| England                     |          10 |
-| Europe                      |          10 |
-| Federal Reserve System      |          10 |
-| Festivals                   |          10 |
+| Keyword                        | \# Articles |
+|:-------------------------------|------------:|
+| Coronavirus (2019-nCoV)        |          20 |
+| \#MeToo Movement               |          10 |
+| Advertising and Marketing      |          10 |
+| Airlines for America           |          10 |
+| AL QAEDA                       |          10 |
+| Amazon.com Inc                 |          10 |
+| audio-neutral-informative      |          10 |
+| Australia                      |          10 |
+| Basketball (College)           |          10 |
+| Beaumont (Tex)                 |          10 |
+| Bessemer (Ala)                 |          10 |
+| Biden, Joseph R Jr             |          10 |
+| Blues Music                    |          10 |
+| Booking.com                    |          10 |
+| Butterfield, Paul              |          10 |
+| Chicago (Ill)                  |          10 |
+| Content Type: Personal Profile |          10 |
+| Coronavirus Omicron Variant    |          10 |
+| Coronavirus Reopenings         |          10 |
+| Deaths (Fatalities)            |          10 |
