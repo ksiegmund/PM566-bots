@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-02-07.
+2022-02-14.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                        | \# Articles |
-|:-------------------------------|------------:|
-| Coronavirus (2019-nCoV)        |          20 |
-| \#MeToo Movement               |          10 |
-| Advertising and Marketing      |          10 |
-| Airlines for America           |          10 |
-| AL QAEDA                       |          10 |
-| Amazon.com Inc                 |          10 |
-| audio-neutral-informative      |          10 |
-| Australia                      |          10 |
-| Basketball (College)           |          10 |
-| Beaumont (Tex)                 |          10 |
-| Bessemer (Ala)                 |          10 |
-| Biden, Joseph R Jr             |          10 |
-| Blues Music                    |          10 |
-| Booking.com                    |          10 |
-| Butterfield, Paul              |          10 |
-| Chicago (Ill)                  |          10 |
-| Content Type: Personal Profile |          10 |
-| Coronavirus Omicron Variant    |          10 |
-| Coronavirus Reopenings         |          10 |
-| Deaths (Fatalities)            |          10 |
+| Keyword                      | \# Articles |
+|:-----------------------------|------------:|
+| Books and Literature         |          20 |
+| Coronavirus (2019-nCoV)      |          20 |
+| Vaccination and Immunization |          20 |
+| A Very Young Dancer (Book)   |          10 |
+| Activision Blizzard Inc      |          10 |
+| AFGHANISTAN                  |          10 |
+| Alabama                      |          10 |
+| Balanchine, George           |          10 |
+| BioNTech SE                  |          10 |
+| Black People                 |          10 |
+| Blacks                       |          10 |
+| Children and Childhood       |          10 |
+| Clinical Trials              |          10 |
+| Colleges and Universities    |          10 |
+| Content Type: Service        |          10 |
+| Coronavirus Omicron Variant  |          10 |
+| Dancing                      |          10 |
+| Deaths (Obituaries)          |          10 |
+| Discrimination               |          10 |
+| Embargoes and Sanctions      |          10 |
