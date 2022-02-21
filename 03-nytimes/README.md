@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-02-14.
+2022-02-21.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                      | \# Articles |
-|:-----------------------------|------------:|
-| Books and Literature         |          20 |
-| Coronavirus (2019-nCoV)      |          20 |
-| Vaccination and Immunization |          20 |
-| A Very Young Dancer (Book)   |          10 |
-| Activision Blizzard Inc      |          10 |
-| AFGHANISTAN                  |          10 |
-| Alabama                      |          10 |
-| Balanchine, George           |          10 |
-| BioNTech SE                  |          10 |
-| Black People                 |          10 |
-| Blacks                       |          10 |
-| Children and Childhood       |          10 |
-| Clinical Trials              |          10 |
-| Colleges and Universities    |          10 |
-| Content Type: Service        |          10 |
-| Coronavirus Omicron Variant  |          10 |
-| Dancing                      |          10 |
-| Deaths (Obituaries)          |          10 |
-| Discrimination               |          10 |
-| Embargoes and Sanctions      |          10 |
+| Keyword                                             | \# Articles |
+|:----------------------------------------------------|------------:|
+| Coronavirus (2019-nCoV)                             |          50 |
+| Canada                                              |          20 |
+| Demonstrations, Protests and Riots                  |          20 |
+| Politics and Government                             |          20 |
+| Right-Wing Extremism and Alt-Right                  |          20 |
+| Russia                                              |          20 |
+| United States                                       |          20 |
+| A Century – Life and Death of Galia Libertad (Play) |          10 |
+| A Death in the Family (Play)                        |          10 |
+| Alcarras (Movie)                                    |          10 |
+| Ambassador Bridge                                   |          10 |
+| Archives and Records                                |          10 |
+| Berlin International Film Festival                  |          10 |
+| Black Lives Matter Movement                         |          10 |
+| Books and Literature                                |          10 |
+| Bukhara (Uzbekistan)                                |          10 |
+| Content Type: Personal Profile                      |          10 |
+| Defense and Military Forces                         |          10 |
+| Drug Abuse and Traffic                              |          10 |
+| Eastern Europe                                      |          10 |
