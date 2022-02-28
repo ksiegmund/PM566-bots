@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-02-21.
+2022-02-28.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                             | \# Articles |
-|:----------------------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                             |          50 |
-| Canada                                              |          20 |
-| Demonstrations, Protests and Riots                  |          20 |
-| Politics and Government                             |          20 |
-| Right-Wing Extremism and Alt-Right                  |          20 |
-| Russia                                              |          20 |
-| United States                                       |          20 |
-| A Century – Life and Death of Galia Libertad (Play) |          10 |
-| A Death in the Family (Play)                        |          10 |
-| Alcarras (Movie)                                    |          10 |
-| Ambassador Bridge                                   |          10 |
-| Archives and Records                                |          10 |
-| Berlin International Film Festival                  |          10 |
-| Black Lives Matter Movement                         |          10 |
-| Books and Literature                                |          10 |
-| Bukhara (Uzbekistan)                                |          10 |
-| Content Type: Personal Profile                      |          10 |
-| Defense and Military Forces                         |          10 |
-| Drug Abuse and Traffic                              |          10 |
-| Eastern Europe                                      |          10 |
+| Keyword                        | \# Articles |
+|:-------------------------------|------------:|
+| Politics and Government        |          40 |
+| New York City                  |          30 |
+| City Council (NYC)             |          20 |
+| Coronavirus (2019-nCoV)        |          20 |
+| Quarantine (Life and Culture)  |          20 |
+| Accidents and Safety           |          10 |
+| Adams, Adrienne (1960- )       |          10 |
+| Adams, Eric L                  |          10 |
+| Anxiety and Stress             |          10 |
+| Arches National Park (Utah)    |          10 |
+| Blanchard, Terence             |          10 |
+| Books and Literature           |          10 |
+| Bread                          |          10 |
+| Cabrera, Fernando              |          10 |
+| Classical Music                |          10 |
+| Coleman, Zendaya               |          10 |
+| Content Type: Personal Profile |          10 |
+| Coronavirus Reopenings         |          10 |
+| Crime and Criminals            |          10 |
+| Democratic Party               |          10 |
