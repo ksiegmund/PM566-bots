@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-02-28.
+2022-03-07.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                        | \# Articles |
-|:-------------------------------|------------:|
-| Politics and Government        |          40 |
-| New York City                  |          30 |
-| City Council (NYC)             |          20 |
-| Coronavirus (2019-nCoV)        |          20 |
-| Quarantine (Life and Culture)  |          20 |
-| Accidents and Safety           |          10 |
-| Adams, Adrienne (1960- )       |          10 |
-| Adams, Eric L                  |          10 |
-| Anxiety and Stress             |          10 |
-| Arches National Park (Utah)    |          10 |
-| Blanchard, Terence             |          10 |
-| Books and Literature           |          10 |
-| Bread                          |          10 |
-| Cabrera, Fernando              |          10 |
-| Classical Music                |          10 |
-| Coleman, Zendaya               |          10 |
-| Content Type: Personal Profile |          10 |
-| Coronavirus Reopenings         |          10 |
-| Crime and Criminals            |          10 |
-| Democratic Party               |          10 |
+| Keyword                                  | \# Articles |
+|:-----------------------------------------|------------:|
+| Coronavirus (2019-nCoV)                  |          30 |
+| Vaccination and Immunization             |          30 |
+| California                               |          20 |
+| Demonstrations, Protests and Riots       |          20 |
+| Agriculture and Farming                  |          10 |
+| Alternative for Germany                  |          10 |
+| Animal Behavior                          |          10 |
+| Anxiety and Stress                       |          10 |
+| Automobile Service and Charging Stations |          10 |
+| Burns                                    |          10 |
+| Cats                                     |          10 |
+| Charge Enterprises Inc                   |          10 |
+| Children and Childhood                   |          10 |
+| Clinical Trials                          |          10 |
+| Conservation of Resources                |          10 |
+| Conspiracy Theories                      |          10 |
+| Consumer Product Safety Commission       |          10 |
+| Coronavirus Omicron Variant              |          10 |
+| Coronavirus Reopenings                   |          10 |
+| Disasters and Emergencies                |          10 |
