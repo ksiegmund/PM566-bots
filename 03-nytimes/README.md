@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-03-07.
+2022-03-14.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                  | \# Articles |
-|:-----------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                  |          30 |
-| Vaccination and Immunization             |          30 |
-| California                               |          20 |
-| Demonstrations, Protests and Riots       |          20 |
-| Agriculture and Farming                  |          10 |
-| Alternative for Germany                  |          10 |
-| Animal Behavior                          |          10 |
-| Anxiety and Stress                       |          10 |
-| Automobile Service and Charging Stations |          10 |
-| Burns                                    |          10 |
-| Cats                                     |          10 |
-| Charge Enterprises Inc                   |          10 |
-| Children and Childhood                   |          10 |
-| Clinical Trials                          |          10 |
-| Conservation of Resources                |          10 |
-| Conspiracy Theories                      |          10 |
-| Consumer Product Safety Commission       |          10 |
-| Coronavirus Omicron Variant              |          10 |
-| Coronavirus Reopenings                   |          10 |
-| Disasters and Emergencies                |          10 |
+| Keyword                               | \# Articles |
+|:--------------------------------------|------------:|
+| Coronavirus (2019-nCoV)               |          30 |
+| Africa                                |          10 |
+| Alakija, Ayoade                       |          10 |
+| Americans With Disabilities Act       |          10 |
+| Art                                   |          10 |
+| Biden, Joseph R Jr                    |          10 |
+| Blue Note Jazz Club (Manhattan, NY)   |          10 |
+| Books and Literature                  |          10 |
+| Center Theater Group                  |          10 |
+| Classical Music                       |          10 |
+| Content Type: Personal Profile        |          10 |
+| Coronavirus Omicron Variant           |          10 |
+| Coronavirus Reopenings                |          10 |
+| Coronavirus Risks and Safety Concerns |          10 |
+| Culture (Arts)                        |          10 |
+| Deaths (Obituaries)                   |          10 |
+| Disabilities                          |          10 |
+| Drug Abuse and Traffic                |          10 |
+| Empathy                               |          10 |
+| Epidemics                             |          10 |
