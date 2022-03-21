@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-03-14.
+2022-03-21.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                               | \# Articles |
-|:--------------------------------------|------------:|
-| Coronavirus (2019-nCoV)               |          30 |
-| Africa                                |          10 |
-| Alakija, Ayoade                       |          10 |
-| Americans With Disabilities Act       |          10 |
-| Art                                   |          10 |
-| Biden, Joseph R Jr                    |          10 |
-| Blue Note Jazz Club (Manhattan, NY)   |          10 |
-| Books and Literature                  |          10 |
-| Center Theater Group                  |          10 |
-| Classical Music                       |          10 |
-| Content Type: Personal Profile        |          10 |
-| Coronavirus Omicron Variant           |          10 |
-| Coronavirus Reopenings                |          10 |
-| Coronavirus Risks and Safety Concerns |          10 |
-| Culture (Arts)                        |          10 |
-| Deaths (Obituaries)                   |          10 |
-| Disabilities                          |          10 |
-| Drug Abuse and Traffic                |          10 |
-| Empathy                               |          10 |
-| Epidemics                             |          10 |
+| Keyword                             | \# Articles |
+|:------------------------------------|------------:|
+| Coronavirus (2019-nCoV)             |          50 |
+| Education (K-12)                    |          20 |
+| Labor and Jobs                      |          20 |
+| Abortion                            |          10 |
+| Antibodies                          |          10 |
+| Antigone (Play)                     |          10 |
+| Atwood, Margaret                    |          10 |
+| Bicycles and Bicycling              |          10 |
+| Biorhythms                          |          10 |
+| Cain, Briscoe                       |          10 |
+| Camp, Bill                          |          10 |
+| Citigroup Inc                       |          10 |
+| Content Type: Service               |          10 |
+| Cook County Jail (Cook County, Ill) |          10 |
+| Coronavirus Return to Office        |          10 |
+| Decisions and Verdicts              |          10 |
+| Doerries, Bryan                     |          10 |
+| E-Learning                          |          10 |
+| Elderly                             |          10 |
+| Employee Fringe Benefits            |          10 |
