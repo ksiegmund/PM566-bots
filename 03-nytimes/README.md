@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-03-21.
+2022-03-28.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                             | \# Articles |
-|:------------------------------------|------------:|
-| Coronavirus (2019-nCoV)             |          50 |
-| Education (K-12)                    |          20 |
-| Labor and Jobs                      |          20 |
-| Abortion                            |          10 |
-| Antibodies                          |          10 |
-| Antigone (Play)                     |          10 |
-| Atwood, Margaret                    |          10 |
-| Bicycles and Bicycling              |          10 |
-| Biorhythms                          |          10 |
-| Cain, Briscoe                       |          10 |
-| Camp, Bill                          |          10 |
-| Citigroup Inc                       |          10 |
-| Content Type: Service               |          10 |
-| Cook County Jail (Cook County, Ill) |          10 |
-| Coronavirus Return to Office        |          10 |
-| Decisions and Verdicts              |          10 |
-| Doerries, Bryan                     |          10 |
-| E-Learning                          |          10 |
-| Elderly                             |          10 |
-| Employee Fringe Benefits            |          10 |
+| Keyword                           | \# Articles |
+|:----------------------------------|------------:|
+| Coronavirus (2019-nCoV)           |          30 |
+| Vaccination and Immunization      |          30 |
+| Coronavirus Omicron Variant       |          20 |
+| Disease Rates                     |          20 |
+| Politics and Government           |          20 |
+| Adams, Eric L                     |          10 |
+| Amazon Labor Union                |          10 |
+| Amazon.com Inc                    |          10 |
+| Baseball                          |          10 |
+| Bessemer (Ala)                    |          10 |
+| Birth Control and Family Planning |          10 |
+| Brevard, Gerald III               |          10 |
+| China                             |          10 |
+| Collective Bargaining             |          10 |
+| Content Type: Personal Profile    |          10 |
+| Coulibaly, Abdoulaye (d 2022)     |          10 |
+| Cox, Spencer J (1975- )           |          10 |
+| Deaths (Fatalities)               |          10 |
+| Discrimination                    |          10 |
+| Elderly                           |          10 |
