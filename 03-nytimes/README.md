@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-04-04.
+2022-04-11.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                    | \# Articles |
-|:-------------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                    |          30 |
-| Biden, Joseph R Jr                         |          20 |
-| Russia                                     |          20 |
-| Russian Invasion of Ukraine (2022)         |          20 |
-| Ukraine                                    |          20 |
-| Agriculture and Farming                    |          10 |
-| Anxiety and Stress                         |          10 |
-| Asylum, Right of                           |          10 |
-| Australia                                  |          10 |
-| Avian Influenza                            |          10 |
-| Birds                                      |          10 |
-| Border Patrol (US)                         |          10 |
-| Centers for Disease Control and Prevention |          10 |
-| Chickens                                   |          10 |
-| Civilian Casualties                        |          10 |
-| Content Type: Service                      |          10 |
-| Democratic Party                           |          10 |
-| Deportation                                |          10 |
-| Education (K-12)                           |          10 |
-| Eggs                                       |          10 |
+| Keyword                                                                                   | \# Articles |
+|:------------------------------------------------------------------------------------------|------------:|
+| Books and Literature                                                                      |          20 |
+| Coronavirus (2019-nCoV)                                                                   |          20 |
+| Abortion                                                                                  |          10 |
+| Animal Behavior                                                                           |          10 |
+| Animal Cognition                                                                          |          10 |
+| audio-neutral-informative                                                                 |          10 |
+| Belarus                                                                                   |          10 |
+| Bodies on the Line: At the Front Lines of the Fight to Protect Abortion in America (Book) |          10 |
+| Boston Marathon                                                                           |          10 |
+| Brain                                                                                     |          10 |
+| California                                                                                |          10 |
+| Capital Punishment                                                                        |          10 |
+| Celebrities                                                                               |          10 |
+| Chronic Condition (Health)                                                                |          10 |
+| Conservatism (US Politics)                                                                |          10 |
+| Content Type: Service                                                                     |          10 |
+| Coronavirus Risks and Safety Concerns                                                     |          10 |
+| Critical Race Theory                                                                      |          10 |
+| Cruz, Nikolas                                                                             |          10 |
+| Deaths (Obituaries)                                                                       |          10 |
