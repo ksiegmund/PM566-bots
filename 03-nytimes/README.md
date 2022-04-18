@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-04-11.
+2022-04-18.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                                                                   | \# Articles |
-|:------------------------------------------------------------------------------------------|------------:|
-| Books and Literature                                                                      |          20 |
-| Coronavirus (2019-nCoV)                                                                   |          20 |
-| Abortion                                                                                  |          10 |
-| Animal Behavior                                                                           |          10 |
-| Animal Cognition                                                                          |          10 |
-| audio-neutral-informative                                                                 |          10 |
-| Belarus                                                                                   |          10 |
-| Bodies on the Line: At the Front Lines of the Fight to Protect Abortion in America (Book) |          10 |
-| Boston Marathon                                                                           |          10 |
-| Brain                                                                                     |          10 |
-| California                                                                                |          10 |
-| Capital Punishment                                                                        |          10 |
-| Celebrities                                                                               |          10 |
-| Chronic Condition (Health)                                                                |          10 |
-| Conservatism (US Politics)                                                                |          10 |
-| Content Type: Service                                                                     |          10 |
-| Coronavirus Risks and Safety Concerns                                                     |          10 |
-| Critical Race Theory                                                                      |          10 |
-| Cruz, Nikolas                                                                             |          10 |
-| Deaths (Obituaries)                                                                       |          10 |
+| Keyword                                  | \# Articles |
+|:-----------------------------------------|------------:|
+| Coronavirus (2019-nCoV)                  |          40 |
+| Immigration and Emigration               |          20 |
+| Russian Invasion of Ukraine (2022)       |          20 |
+| American University                      |          10 |
+| Anxiety and Stress                       |          10 |
+| Austria                                  |          10 |
+| Baseball                                 |          10 |
+| Biden, Joseph R Jr                       |          10 |
+| Birthdays                                |          10 |
+| Border Barriers                          |          10 |
+| Centene Corporation                      |          10 |
+| Citi Field (Queens, NY)                  |          10 |
+| Coachella Valley Music and Arts Festival |          10 |
+| Colleges and Universities                |          10 |
+| Columbia University                      |          10 |
+| Compensation for Damages (Law)           |          10 |
+| Coronavirus Omicron Variant              |          10 |
+| Coronavirus Risks and Safety Concerns    |          10 |
+| Covington (Ky)                           |          10 |
+| Cyberwarfare and Defense                 |          10 |
