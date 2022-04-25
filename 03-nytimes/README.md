@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-04-18.
+2022-04-25.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                  | \# Articles |
-|:-----------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                  |          40 |
-| Immigration and Emigration               |          20 |
-| Russian Invasion of Ukraine (2022)       |          20 |
-| American University                      |          10 |
-| Anxiety and Stress                       |          10 |
-| Austria                                  |          10 |
-| Baseball                                 |          10 |
-| Biden, Joseph R Jr                       |          10 |
-| Birthdays                                |          10 |
-| Border Barriers                          |          10 |
-| Centene Corporation                      |          10 |
-| Citi Field (Queens, NY)                  |          10 |
-| Coachella Valley Music and Arts Festival |          10 |
-| Colleges and Universities                |          10 |
-| Columbia University                      |          10 |
-| Compensation for Damages (Law)           |          10 |
-| Coronavirus Omicron Variant              |          10 |
-| Coronavirus Risks and Safety Concerns    |          10 |
-| Covington (Ky)                           |          10 |
-| Cyberwarfare and Defense                 |          10 |
+| Keyword                                    | \# Articles |
+|:-------------------------------------------|------------:|
+| Research                                   |          20 |
+| A Brief History of Equality (Book)         |          10 |
+| Agriculture Department                     |          10 |
+| Airlines and Airplanes                     |          10 |
+| Artificial Intelligence                    |          10 |
+| Assaults                                   |          10 |
+| Automobile Safety Features and Defects     |          10 |
+| Avian Influenza                            |          10 |
+| Bald Eagles                                |          10 |
+| Birds                                      |          10 |
+| Books and Literature                       |          10 |
+| Brain                                      |          10 |
+| Bryant, Joycelyn                           |          10 |
+| Calories                                   |          10 |
+| Catering                                   |          10 |
+| Centers for Disease Control and Prevention |          10 |
+| Coronavirus (2019-nCoV)                    |          10 |
+| Deaths (Fatalities)                        |          10 |
+| Delivery Services                          |          10 |
+| DeSantis, Ron                              |          10 |
