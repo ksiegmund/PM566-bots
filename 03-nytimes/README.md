@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-04-25.
+2022-05-02.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                    | \# Articles |
-|:-------------------------------------------|------------:|
-| Research                                   |          20 |
-| A Brief History of Equality (Book)         |          10 |
-| Agriculture Department                     |          10 |
-| Airlines and Airplanes                     |          10 |
-| Artificial Intelligence                    |          10 |
-| Assaults                                   |          10 |
-| Automobile Safety Features and Defects     |          10 |
-| Avian Influenza                            |          10 |
-| Bald Eagles                                |          10 |
-| Birds                                      |          10 |
-| Books and Literature                       |          10 |
-| Brain                                      |          10 |
-| Bryant, Joycelyn                           |          10 |
-| Calories                                   |          10 |
-| Catering                                   |          10 |
-| Centers for Disease Control and Prevention |          10 |
-| Coronavirus (2019-nCoV)                    |          10 |
-| Deaths (Fatalities)                        |          10 |
-| Delivery Services                          |          10 |
-| DeSantis, Ron                              |          10 |
+| Keyword                                | \# Articles |
+|:---------------------------------------|------------:|
+| Black People                           |          30 |
+| Blacks                                 |          30 |
+| Politics and Government                |          30 |
+| Discrimination                         |          20 |
+| France                                 |          20 |
+| Abortion                               |          10 |
+| Academic Freedom                       |          10 |
+| Adams, Eric L                          |          10 |
+| Alabama                                |          10 |
+| American Assn of University Professors |          10 |
+| Art                                    |          10 |
+| Basketball                             |          10 |
+| Biden, Joseph R Jr                     |          10 |
+| Biographical Information               |          10 |
+| Black Lives Matter Movement            |          10 |
+| Border Barriers                        |          10 |
+| Boston Celtics                         |          10 |
+| Brooklyn Nets                          |          10 |
+| Chapel Hill (NC)                       |          10 |
+| Colleges and Universities              |          10 |
