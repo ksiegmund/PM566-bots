@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-05-02.
+2022-05-09.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                | \# Articles |
-|:---------------------------------------|------------:|
-| Black People                           |          30 |
-| Blacks                                 |          30 |
-| Politics and Government                |          30 |
-| Discrimination                         |          20 |
-| France                                 |          20 |
-| Abortion                               |          10 |
-| Academic Freedom                       |          10 |
-| Adams, Eric L                          |          10 |
-| Alabama                                |          10 |
-| American Assn of University Professors |          10 |
-| Art                                    |          10 |
-| Basketball                             |          10 |
-| Biden, Joseph R Jr                     |          10 |
-| Biographical Information               |          10 |
-| Black Lives Matter Movement            |          10 |
-| Border Barriers                        |          10 |
-| Boston Celtics                         |          10 |
-| Brooklyn Nets                          |          10 |
-| Chapel Hill (NC)                       |          10 |
-| Colleges and Universities              |          10 |
+| Keyword                             | \# Articles |
+|:------------------------------------|------------:|
+| Abortion                            |          50 |
+| Roe v Wade (Supreme Court Decision) |          50 |
+| Supreme Court (US)                  |          30 |
+| Birth Control and Family Planning   |          20 |
+| Law and Legislation                 |          20 |
+| Roberts, John G Jr                  |          20 |
+| Women and Girls                     |          20 |
+| Acquired Immune Deficiency Syndrome |          10 |
+| Alito, Samuel A Jr                  |          10 |
+| Austin, Lloyd J III                 |          10 |
+| Baldelli, Rocco                     |          10 |
+| Baseball                            |          10 |
+| Biden, Joseph R Jr                  |          10 |
+| Buxton, Byron (1993- )              |          10 |
+| Condoms                             |          10 |
+| Content Type: Personal Profile      |          10 |
+| Content Type: Service               |          10 |
+| Correa, Carlos (1994- )             |          10 |
+| Estrogen                            |          10 |
+| Falvey, Derek (1983- )              |          10 |
