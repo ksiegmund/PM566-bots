@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-05-09.
+2022-05-16.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                             | \# Articles |
-|:------------------------------------|------------:|
-| Abortion                            |          50 |
-| Roe v Wade (Supreme Court Decision) |          50 |
-| Supreme Court (US)                  |          30 |
-| Birth Control and Family Planning   |          20 |
-| Law and Legislation                 |          20 |
-| Roberts, John G Jr                  |          20 |
-| Women and Girls                     |          20 |
-| Acquired Immune Deficiency Syndrome |          10 |
-| Alito, Samuel A Jr                  |          10 |
-| Austin, Lloyd J III                 |          10 |
-| Baldelli, Rocco                     |          10 |
-| Baseball                            |          10 |
-| Biden, Joseph R Jr                  |          10 |
-| Buxton, Byron (1993- )              |          10 |
-| Condoms                             |          10 |
-| Content Type: Personal Profile      |          10 |
-| Content Type: Service               |          10 |
-| Correa, Carlos (1994- )             |          10 |
-| Estrogen                            |          10 |
-| Falvey, Derek (1983- )              |          10 |
+| Keyword                                  | \# Articles |
+|:-----------------------------------------|------------:|
+| Coronavirus (2019-nCoV)                  |          50 |
+| Politics and Government                  |          30 |
+| Russian Invasion of Ukraine (2022)       |          30 |
+| Disease Rates                            |          20 |
+| Quarantine (Life and Culture)            |          20 |
+| Ukraine                                  |          20 |
+| Abbott Laboratories                      |          10 |
+| Antidepressants                          |          10 |
+| Anxiety and Stress                       |          10 |
+| Attention Deficit Hyperactivity Disorder |          10 |
+| Banking and Financial Institutions       |          10 |
+| Breastfeeding                            |          10 |
+| Children and Childhood                   |          10 |
+| China                                    |          10 |
+| Colombo (Sri Lanka)                      |          10 |
+| Correction Board (NYC)                   |          10 |
+| Correction Department (NYC)              |          10 |
+| Deaths (Fatalities)                      |          10 |
+| Demonstrations, Protests and Riots       |          10 |
+| Depression (Mental)                      |          10 |
