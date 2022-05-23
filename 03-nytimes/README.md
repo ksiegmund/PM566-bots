@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-05-16.
+2022-05-23.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                  | \# Articles |
-|:-----------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                  |          50 |
-| Politics and Government                  |          30 |
-| Russian Invasion of Ukraine (2022)       |          30 |
-| Disease Rates                            |          20 |
-| Quarantine (Life and Culture)            |          20 |
-| Ukraine                                  |          20 |
-| Abbott Laboratories                      |          10 |
-| Antidepressants                          |          10 |
-| Anxiety and Stress                       |          10 |
-| Attention Deficit Hyperactivity Disorder |          10 |
-| Banking and Financial Institutions       |          10 |
-| Breastfeeding                            |          10 |
-| Children and Childhood                   |          10 |
-| China                                    |          10 |
-| Colombo (Sri Lanka)                      |          10 |
-| Correction Board (NYC)                   |          10 |
-| Correction Department (NYC)              |          10 |
-| Deaths (Fatalities)                      |          10 |
-| Demonstrations, Protests and Riots       |          10 |
-| Depression (Mental)                      |          10 |
+| Keyword                                        | \# Articles |
+|:-----------------------------------------------|------------:|
+| Abortion                                       |          20 |
+| Black People                                   |          20 |
+| Blacks                                         |          20 |
+| Buffalo (NY)                                   |          20 |
+| United States Politics and Government          |          20 |
+| Abbott Laboratories                            |          10 |
+| Animal Behavior                                |          10 |
+| Art                                            |          10 |
+| Banking and Financial Institutions             |          10 |
+| Bowels                                         |          10 |
+| Buffalo, NY, Shooting (May 14, 2022)           |          10 |
+| Chelsea (Manhattan, NY)                        |          10 |
+| Children and Childhood                         |          10 |
+| Christchurch, New Zealand, Attack (March 2019) |          10 |
+| Christians and Christianity                    |          10 |
+| Citigroup Inc                                  |          10 |
+| Civil Rights and Liberties                     |          10 |
+| Content Type: Service                          |          10 |
+| Coronavirus (2019-nCoV)                        |          10 |
+| de Kooning, Willem                             |          10 |
