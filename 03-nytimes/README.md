@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-05-23.
+2022-05-30.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                        | \# Articles |
-|:-----------------------------------------------|------------:|
-| Abortion                                       |          20 |
-| Black People                                   |          20 |
-| Blacks                                         |          20 |
-| Buffalo (NY)                                   |          20 |
-| United States Politics and Government          |          20 |
-| Abbott Laboratories                            |          10 |
-| Animal Behavior                                |          10 |
-| Art                                            |          10 |
-| Banking and Financial Institutions             |          10 |
-| Bowels                                         |          10 |
-| Buffalo, NY, Shooting (May 14, 2022)           |          10 |
-| Chelsea (Manhattan, NY)                        |          10 |
-| Children and Childhood                         |          10 |
-| Christchurch, New Zealand, Attack (March 2019) |          10 |
-| Christians and Christianity                    |          10 |
-| Citigroup Inc                                  |          10 |
-| Civil Rights and Liberties                     |          10 |
-| Content Type: Service                          |          10 |
-| Coronavirus (2019-nCoV)                        |          10 |
-| de Kooning, Willem                             |          10 |
+| Keyword                                                                         | \# Articles |
+|:--------------------------------------------------------------------------------|------------:|
+| Books and Literature                                                            |          20 |
+| Education (K-12)                                                                |          20 |
+| United States Politics and Government                                           |          20 |
+| Abortion                                                                        |          10 |
+| ALASKA                                                                          |          10 |
+| Artificial Intelligence                                                         |          10 |
+| Bailey, Tessa                                                                   |          10 |
+| Biaggi, Alessandra                                                              |          10 |
+| Broward College                                                                 |          10 |
+| Carter, Jimmy                                                                   |          10 |
+| Chaos Theory: Finding Meaning in the Madness, One Bad Decision at a Time (Book) |          10 |
+| Cheating                                                                        |          10 |
+| Cold Bay (Alaska)                                                               |          10 |
+| Colleges and Universities                                                       |          10 |
+| Comfort, Jen                                                                    |          10 |
+| Conservation of Resources                                                       |          10 |
+| Content Type: Personal Profile                                                  |          10 |
+| Coronavirus (2019-nCoV)                                                         |          10 |
+| Coronavirus Reopenings                                                          |          10 |
+| Dating Dr Dil (Book)                                                            |          10 |
