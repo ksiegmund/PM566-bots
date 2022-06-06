@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-05-30.
+2022-06-06.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                                                         | \# Articles |
-|:--------------------------------------------------------------------------------|------------:|
-| Books and Literature                                                            |          20 |
-| Education (K-12)                                                                |          20 |
-| United States Politics and Government                                           |          20 |
-| Abortion                                                                        |          10 |
-| ALASKA                                                                          |          10 |
-| Artificial Intelligence                                                         |          10 |
-| Bailey, Tessa                                                                   |          10 |
-| Biaggi, Alessandra                                                              |          10 |
-| Broward College                                                                 |          10 |
-| Carter, Jimmy                                                                   |          10 |
-| Chaos Theory: Finding Meaning in the Madness, One Bad Decision at a Time (Book) |          10 |
-| Cheating                                                                        |          10 |
-| Cold Bay (Alaska)                                                               |          10 |
-| Colleges and Universities                                                       |          10 |
-| Comfort, Jen                                                                    |          10 |
-| Conservation of Resources                                                       |          10 |
-| Content Type: Personal Profile                                                  |          10 |
-| Coronavirus (2019-nCoV)                                                         |          10 |
-| Coronavirus Reopenings                                                          |          10 |
-| Dating Dr Dil (Book)                                                            |          10 |
+| Keyword                                       | \# Articles |
+|:----------------------------------------------|------------:|
+| Biden, Joseph R Jr                            |          20 |
+| Coronavirus (2019-nCoV)                       |          20 |
+| New York City                                 |          20 |
+| Russian Invasion of Ukraine (2022)            |          20 |
+| War and Armed Conflicts                       |          20 |
+| AFRICA                                        |          10 |
+| Athletics and Sports                          |          10 |
+| Buckingham Palace                             |          10 |
+| Buffalo (NY)                                  |          10 |
+| Buses                                         |          10 |
+| Children and Childhood                        |          10 |
+| Cincinnati Children’s Hospital Medical Center |          10 |
+| Civilian Casualties                           |          10 |
+| Commuting                                     |          10 |
+| Delays (Transportation)                       |          10 |
+| Democratic Party                              |          10 |
+| Depp, Johnny                                  |          10 |
+| DeSantis, Ron                                 |          10 |
+| Diet and Nutrition                            |          10 |
+| Disease Rates                                 |          10 |
