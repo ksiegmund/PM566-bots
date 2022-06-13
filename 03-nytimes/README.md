@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-06-06.
+2022-06-13.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                       | \# Articles |
-|:----------------------------------------------|------------:|
-| Biden, Joseph R Jr                            |          20 |
-| Coronavirus (2019-nCoV)                       |          20 |
-| New York City                                 |          20 |
-| Russian Invasion of Ukraine (2022)            |          20 |
-| War and Armed Conflicts                       |          20 |
-| AFRICA                                        |          10 |
-| Athletics and Sports                          |          10 |
-| Buckingham Palace                             |          10 |
-| Buffalo (NY)                                  |          10 |
-| Buses                                         |          10 |
-| Children and Childhood                        |          10 |
-| Cincinnati Children’s Hospital Medical Center |          10 |
-| Civilian Casualties                           |          10 |
-| Commuting                                     |          10 |
-| Delays (Transportation)                       |          10 |
-| Democratic Party                              |          10 |
-| Depp, Johnny                                  |          10 |
-| DeSantis, Ron                                 |          10 |
-| Diet and Nutrition                            |          10 |
-| Disease Rates                                 |          10 |
+| Keyword                                     | \# Articles |
+|:--------------------------------------------|------------:|
+| Coronavirus (2019-nCoV)                     |          50 |
+| Shanghai (China)                            |          20 |
+| Vaccination and Immunization                |          20 |
+| Admissions Standards                        |          10 |
+| Android (Operating System)                  |          10 |
+| Anxiety and Stress                          |          10 |
+| Apple Inc                                   |          10 |
+| Asian-Americans                             |          10 |
+| Bars and Nightclubs                         |          10 |
+| Beijing (China)                             |          10 |
+| Books and Literature                        |          10 |
+| Brooklyn (NYC)                              |          10 |
+| China                                       |          10 |
+| Chinese Language                            |          10 |
+| Chinese-Americans                           |          10 |
+| Chou, David (Laguna Woods, Calif, Shooting) |          10 |
+| Churches (Buildings)                        |          10 |
+| Conservative Party (Great Britain)          |          10 |
+| Consultants                                 |          10 |
+| Demonstrations, Protests and Riots          |          10 |
