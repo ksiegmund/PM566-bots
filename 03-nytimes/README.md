@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-06-13.
+2022-06-20.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                     | \# Articles |
-|:--------------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                     |          50 |
-| Shanghai (China)                            |          20 |
-| Vaccination and Immunization                |          20 |
-| Admissions Standards                        |          10 |
-| Android (Operating System)                  |          10 |
-| Anxiety and Stress                          |          10 |
-| Apple Inc                                   |          10 |
-| Asian-Americans                             |          10 |
-| Bars and Nightclubs                         |          10 |
-| Beijing (China)                             |          10 |
-| Books and Literature                        |          10 |
-| Brooklyn (NYC)                              |          10 |
-| China                                       |          10 |
-| Chinese Language                            |          10 |
-| Chinese-Americans                           |          10 |
-| Chou, David (Laguna Woods, Calif, Shooting) |          10 |
-| Churches (Buildings)                        |          10 |
-| Conservative Party (Great Britain)          |          10 |
-| Consultants                                 |          10 |
-| Demonstrations, Protests and Riots          |          10 |
+| Keyword                                 | \# Articles |
+|:----------------------------------------|------------:|
+| Drugs (Pharmaceuticals)                 |          20 |
+| Abortion                                |          10 |
+| Admissions Standards                    |          10 |
+| Alternative and Renewable Energy        |          10 |
+| Alzheimer’s Disease                     |          10 |
+| Anxiety and Stress                      |          10 |
+| Banner Alzheimer’s Institute            |          10 |
+| Children and Childhood                  |          10 |
+| Clinical Trials                         |          10 |
+| Coal                                    |          10 |
+| Content Type: Personal Profile          |          10 |
+| Content Type: Service                   |          10 |
+| Coronavirus (2019-nCoV)                 |          10 |
+| Debates (Political)                     |          10 |
+| Demonstrations, Protests and Riots      |          10 |
+| Depression (Mental)                     |          10 |
+| DeSantis, Ron                           |          10 |
+| Dietary Supplements and Herbal Remedies |          10 |
+| Education (K-12)                        |          10 |
+| Education Department (NYC)              |          10 |
