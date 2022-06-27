@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-06-20.
+2022-06-27.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -85,23 +85,23 @@ knitr::kable(tab, row.names = FALSE)
 
 | Keyword                                 | \# Articles |
 |:----------------------------------------|------------:|
-| Drugs (Pharmaceuticals)                 |          20 |
-| Abortion                                |          10 |
-| Admissions Standards                    |          10 |
+| Democratic Party                        |          40 |
+| Supreme Court (US)                      |          40 |
+| Abortion                                |          30 |
+| Roe v Wade (Supreme Court Decision)     |          30 |
+| New York State                          |          20 |
+| Politics and Government                 |          20 |
+| Primaries and Caucuses                  |          20 |
+| United States Politics and Government   |          20 |
 | Alternative and Renewable Energy        |          10 |
-| Alzheimer’s Disease                     |          10 |
-| Anxiety and Stress                      |          10 |
-| Banner Alzheimer’s Institute            |          10 |
-| Children and Childhood                  |          10 |
-| Clinical Trials                         |          10 |
-| Coal                                    |          10 |
-| Content Type: Personal Profile          |          10 |
-| Content Type: Service                   |          10 |
-| Coronavirus (2019-nCoV)                 |          10 |
-| Debates (Political)                     |          10 |
-| Demonstrations, Protests and Riots      |          10 |
-| Depression (Mental)                     |          10 |
-| DeSantis, Ron                           |          10 |
-| Dietary Supplements and Herbal Remedies |          10 |
-| Education (K-12)                        |          10 |
-| Education Department (NYC)              |          10 |
+| Archila, Ana Maria                      |          10 |
+| Assistance Assn for Political Prisoners |          10 |
+| Assn of Southeast Asian Nations         |          10 |
+| Aung San Suu Kyi                        |          10 |
+| Biden, Joseph R Jr                      |          10 |
+| Canada                                  |          10 |
+| Constitution (US)                       |          10 |
+| Corporate Social Responsibility         |          10 |
+| Corporations                            |          10 |
+| Coups D’Etat and Attempted Coups D’Etat |          10 |
+| Defense and Military Forces             |          10 |
