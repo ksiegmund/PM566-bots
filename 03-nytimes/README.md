@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-06-27.
+2022-07-04.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                 | \# Articles |
-|:----------------------------------------|------------:|
-| Democratic Party                        |          40 |
-| Supreme Court (US)                      |          40 |
-| Abortion                                |          30 |
-| Roe v Wade (Supreme Court Decision)     |          30 |
-| New York State                          |          20 |
-| Politics and Government                 |          20 |
-| Primaries and Caucuses                  |          20 |
-| United States Politics and Government   |          20 |
-| Alternative and Renewable Energy        |          10 |
-| Archila, Ana Maria                      |          10 |
-| Assistance Assn for Political Prisoners |          10 |
-| Assn of Southeast Asian Nations         |          10 |
-| Aung San Suu Kyi                        |          10 |
-| Biden, Joseph R Jr                      |          10 |
-| Canada                                  |          10 |
-| Constitution (US)                       |          10 |
-| Corporate Social Responsibility         |          10 |
-| Corporations                            |          10 |
-| Coups D’Etat and Attempted Coups D’Etat |          10 |
-| Defense and Military Forces             |          10 |
+| Keyword                                                              | \# Articles |
+|:---------------------------------------------------------------------|------------:|
+| Abortion                                                             |          20 |
+| Dobbs v Jackson Women’s Health Organization (Supreme Court Decision) |          20 |
+| Illegal Immigration                                                  |          20 |
+| Immigration and Emigration                                           |          20 |
+| Supreme Court (US)                                                   |          20 |
+| United States                                                        |          20 |
+| Advertising and Marketing                                            |          10 |
+| AMTRAK                                                               |          10 |
+| Asylum, Right of                                                     |          10 |
+| Bavarian Nordic AS                                                   |          10 |
+| Biden, Joseph R Jr                                                   |          10 |
+| BNSF Railway                                                         |          10 |
+| Brentwood (Calif)                                                    |          10 |
+| Constitutions                                                        |          10 |
+| Content Type: Service                                                |          10 |
+| Deaths (Fatalities)                                                  |          10 |
+| Decisions and Verdicts                                               |          10 |
+| Demonstrations, Protests and Riots                                   |          10 |
+| E-Cigarettes                                                         |          10 |
+| Emergency Medical Treatment                                          |          10 |
