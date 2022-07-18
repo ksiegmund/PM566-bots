@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-07-11.
+2022-07-18.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                                              | \# Articles |
-|:---------------------------------------------------------------------|------------:|
-| Content Type: Service                                                |          20 |
-| Labor and Jobs                                                       |          20 |
-| Politics and Government                                              |          20 |
-| Abortion                                                             |          10 |
-| Alternative and Renewable Energy                                     |          10 |
-| AMERICAN COLLEGE OF OBSTETRICIANS AND GYNECOLOGISTS                  |          10 |
-| Appointments and Executive Changes                                   |          10 |
-| Benedict XVI                                                         |          10 |
-| Braverman, Suella                                                    |          10 |
-| Budgets and Budgeting                                                |          10 |
-| California                                                           |          10 |
-| Careers and Professions                                              |          10 |
-| Coronavirus Risks and Safety Concerns                                |          10 |
-| Dobbs v Jackson Women’s Health Organization (Supreme Court Decision) |          10 |
-| Drugs (Pharmaceuticals)                                              |          10 |
-| Economic Conditions and Trends                                       |          10 |
-| Families and Family Life                                             |          10 |
-| Francis                                                              |          10 |
-| Great Britain                                                        |          10 |
-| Greenhouse Gas Emissions                                             |          10 |
+| Keyword                                    | \# Articles |
+|:-------------------------------------------|------------:|
+| Abortion                                   |          30 |
+| Democratic Party                           |          30 |
+| United States Politics and Government      |          30 |
+| House of Representatives                   |          20 |
+| Law and Legislation                        |          20 |
+| Senate                                     |          20 |
+| States (US)                                |          20 |
+| Air Pollution                              |          10 |
+| Alternative and Complementary Medicine     |          10 |
+| Alternative and Renewable Energy           |          10 |
+| Anxiety and Stress                         |          10 |
+| Attorneys General                          |          10 |
+| Bavarian Nordic AS                         |          10 |
+| Beauvoir, Simone de                        |          10 |
+| Bernard, Caitlin                           |          10 |
+| Biden, Joseph R Jr                         |          10 |
+| Books and Literature                       |          10 |
+| Carbon Dioxide                             |          10 |
+| Centers for Disease Control and Prevention |          10 |
+| Child Abuse and Neglect                    |          10 |
