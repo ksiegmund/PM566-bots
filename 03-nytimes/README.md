@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-07-18.
+2022-07-25.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -85,23 +85,23 @@ knitr::kable(tab, row.names = FALSE)
 
 | Keyword                                    | \# Articles |
 |:-------------------------------------------|------------:|
-| Abortion                                   |          30 |
-| Democratic Party                           |          30 |
-| United States Politics and Government      |          30 |
-| House of Representatives                   |          20 |
-| Law and Legislation                        |          20 |
-| Senate                                     |          20 |
-| States (US)                                |          20 |
-| Air Pollution                              |          10 |
-| Alternative and Complementary Medicine     |          10 |
+| Coronavirus (2019-nCoV)                    |          30 |
+| Heat and Heat Waves                        |          30 |
+| Weather                                    |          30 |
+| Biden, Joseph R Jr                         |          20 |
+| National Weather Service                   |          20 |
+| Politics and Government                    |          20 |
+| Adams, Eric L                              |          10 |
 | Alternative and Renewable Energy           |          10 |
-| Anxiety and Stress                         |          10 |
-| Attorneys General                          |          10 |
-| Bavarian Nordic AS                         |          10 |
-| Beauvoir, Simone de                        |          10 |
-| Bernard, Caitlin                           |          10 |
-| Biden, Joseph R Jr                         |          10 |
-| Books and Literature                       |          10 |
-| Carbon Dioxide                             |          10 |
-| Centers for Disease Control and Prevention |          10 |
-| Child Abuse and Neglect                    |          10 |
+| American Families Plan (2021)              |          10 |
+| Arkansas                                   |          10 |
+| Arts and Antiquities Looting               |          10 |
+| Assets, Frozen                             |          10 |
+| Australia                                  |          10 |
+| Babies and Infants                         |          10 |
+| Banking and Financial Institutions         |          10 |
+| Boston (Mass)                              |          10 |
+| California                                 |          10 |
+| Carbon Caps and Emissions Trading Programs |          10 |
+| China                                      |          10 |
+| Communist Party of China                   |          10 |
