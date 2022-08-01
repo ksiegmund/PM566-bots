@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-07-25.
+2022-08-01.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                    | \# Articles |
-|:-------------------------------------------|------------:|
-| Coronavirus (2019-nCoV)                    |          30 |
-| Heat and Heat Waves                        |          30 |
-| Weather                                    |          30 |
-| Biden, Joseph R Jr                         |          20 |
-| National Weather Service                   |          20 |
-| Politics and Government                    |          20 |
-| Adams, Eric L                              |          10 |
-| Alternative and Renewable Energy           |          10 |
-| American Families Plan (2021)              |          10 |
-| Arkansas                                   |          10 |
-| Arts and Antiquities Looting               |          10 |
-| Assets, Frozen                             |          10 |
-| Australia                                  |          10 |
-| Babies and Infants                         |          10 |
-| Banking and Financial Institutions         |          10 |
-| Boston (Mass)                              |          10 |
-| California                                 |          10 |
-| Carbon Caps and Emissions Trading Programs |          10 |
-| China                                      |          10 |
-| Communist Party of China                   |          10 |
+| Keyword                            | \# Articles |
+|:-----------------------------------|------------:|
+| Inflation (Economics)              |          20 |
+| United States Economy              |          20 |
+| \#MeToo Movement                   |          10 |
+| Abortion                           |          10 |
+| Biden, Joseph R Jr                 |          10 |
+| Black People                       |          10 |
+| Blacks                             |          10 |
+| Careers and Professions            |          10 |
+| Company Reports                    |          10 |
+| Coronavirus (2019-nCoV)            |          10 |
+| Coronavirus Omicron Variant        |          10 |
+| Courts and the Judiciary           |          10 |
+| Deaths (Fatalities)                |          10 |
+| Demonstrations, Protests and Riots |          10 |
+| DeSantis, Ron                      |          10 |
+| Discrimination                     |          10 |
+| Disease Rates                      |          10 |
+| Federal Reserve System             |          10 |
+| Florida                            |          10 |
+| Gross Domestic Product             |          10 |
