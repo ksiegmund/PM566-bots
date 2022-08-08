@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-08-01.
+2022-08-08.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                            | \# Articles |
-|:-----------------------------------|------------:|
-| Inflation (Economics)              |          20 |
-| United States Economy              |          20 |
-| \#MeToo Movement                   |          10 |
-| Abortion                           |          10 |
-| Biden, Joseph R Jr                 |          10 |
-| Black People                       |          10 |
-| Blacks                             |          10 |
-| Careers and Professions            |          10 |
-| Company Reports                    |          10 |
-| Coronavirus (2019-nCoV)            |          10 |
-| Coronavirus Omicron Variant        |          10 |
-| Courts and the Judiciary           |          10 |
-| Deaths (Fatalities)                |          10 |
-| Demonstrations, Protests and Riots |          10 |
-| DeSantis, Ron                      |          10 |
-| Discrimination                     |          10 |
-| Disease Rates                      |          10 |
-| Federal Reserve System             |          10 |
-| Florida                            |          10 |
-| Gross Domestic Product             |          10 |
+| Keyword                               | \# Articles |
+|:--------------------------------------|------------:|
+| United States Politics and Government |          40 |
+| Abortion                              |          30 |
+| Democratic Party                      |          30 |
+| Health Insurance and Managed Care     |          30 |
+| United States                         |          30 |
+| Biden, Joseph R Jr                    |          20 |
+| Drugs (Pharmaceuticals)               |          20 |
+| Global Warming                        |          20 |
+| Medicare                              |          20 |
+| Midterm Elections (2022)              |          20 |
+| Prices (Fares, Fees and Rates)        |          20 |
+| Republican Party                      |          20 |
+| Senate                                |          20 |
+| States (US)                           |          20 |
+| Vaccination and Immunization          |          20 |
+| AFGHANISTAN                           |          10 |
+| Afghanistan War (2001- )              |          10 |
+| AL QAEDA                              |          10 |
+| audio-neutral-informative             |          10 |
+| Babineaux-Fontenot, Claire            |          10 |
