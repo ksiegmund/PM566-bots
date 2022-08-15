@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-08-08.
+2022-08-15.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                               | \# Articles |
-|:--------------------------------------|------------:|
-| United States Politics and Government |          40 |
-| Abortion                              |          30 |
-| Democratic Party                      |          30 |
-| Health Insurance and Managed Care     |          30 |
-| United States                         |          30 |
-| Biden, Joseph R Jr                    |          20 |
-| Drugs (Pharmaceuticals)               |          20 |
-| Global Warming                        |          20 |
-| Medicare                              |          20 |
-| Midterm Elections (2022)              |          20 |
-| Prices (Fares, Fees and Rates)        |          20 |
-| Republican Party                      |          20 |
-| Senate                                |          20 |
-| States (US)                           |          20 |
-| Vaccination and Immunization          |          20 |
-| AFGHANISTAN                           |          10 |
-| Afghanistan War (2001- )              |          10 |
-| AL QAEDA                              |          10 |
-| audio-neutral-informative             |          10 |
-| Babineaux-Fontenot, Claire            |          10 |
+| Keyword                        | \# Articles |
+|:-------------------------------|------------:|
+| Content Type: Service          |          20 |
+| Research                       |          20 |
+| Women and Girls                |          20 |
+| Content Type: Personal Profile |          12 |
+| AFGHANISTAN                    |          10 |
+| Afghanistan War (2001- )       |          10 |
+| Alcohol Abuse                  |          10 |
+| Black People                   |          10 |
+| Blacks                         |          10 |
+| Cancer                         |          10 |
+| Coronavirus (2019-nCoV)        |          10 |
+| Coronavirus Omicron Variant    |          10 |
+| Cosmetics and Toiletries       |          10 |
+| Drunken and Reckless Driving   |          10 |
+| Elderly                        |          10 |
+| Ethics (Personal)              |          10 |
+| Fires and Firefighters         |          10 |
+| Food and Drug Administration   |          10 |
+| Global Warming                 |          10 |
+| Hair                           |          10 |
