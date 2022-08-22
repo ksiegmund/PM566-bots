@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-08-15.
+2022-08-22.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                        | \# Articles |
-|:-------------------------------|------------:|
-| Content Type: Service          |          20 |
-| Research                       |          20 |
-| Women and Girls                |          20 |
-| Content Type: Personal Profile |          12 |
-| AFGHANISTAN                    |          10 |
-| Afghanistan War (2001- )       |          10 |
-| Alcohol Abuse                  |          10 |
-| Black People                   |          10 |
-| Blacks                         |          10 |
-| Cancer                         |          10 |
-| Coronavirus (2019-nCoV)        |          10 |
-| Coronavirus Omicron Variant    |          10 |
-| Cosmetics and Toiletries       |          10 |
-| Drunken and Reckless Driving   |          10 |
-| Elderly                        |          10 |
-| Ethics (Personal)              |          10 |
-| Fires and Firefighters         |          10 |
-| Food and Drug Administration   |          10 |
-| Global Warming                 |          10 |
-| Hair                           |          10 |
+| Keyword                                    | \# Articles |
+|:-------------------------------------------|------------:|
+| Centers for Disease Control and Prevention |          20 |
+| Health Insurance and Managed Care          |          20 |
+| Poliomyelitis                              |          20 |
+| Real Estate and Housing (Residential)      |          20 |
+| Rockland County (NY)                       |          20 |
+| United States Politics and Government      |          20 |
+| Vaccination and Immunization               |          20 |
+| Abortion                                   |          10 |
+| Affordable Housing                         |          10 |
+| American Rescue Plan (2021)                |          10 |
+| Austin (Tex)                               |          10 |
+| Catskill Mountains                         |          10 |
+| Catskills (NYS Area)                       |          10 |
+| Congressional Budget Office                |          10 |
+| Content Type: Personal Profile             |          10 |
+| Country Music                              |          10 |
+| Disease Rates                              |          10 |
+| Drugs (Pharmaceuticals)                    |          10 |
+| E Coli (Bacteria)                          |          10 |
+| Food                                       |          10 |
