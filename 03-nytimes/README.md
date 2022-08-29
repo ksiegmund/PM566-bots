@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-08-22.
+2022-08-29.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                    | \# Articles |
-|:-------------------------------------------|------------:|
-| Centers for Disease Control and Prevention |          20 |
-| Health Insurance and Managed Care          |          20 |
-| Poliomyelitis                              |          20 |
-| Real Estate and Housing (Residential)      |          20 |
-| Rockland County (NY)                       |          20 |
-| United States Politics and Government      |          20 |
-| Vaccination and Immunization               |          20 |
-| Abortion                                   |          10 |
-| Affordable Housing                         |          10 |
-| American Rescue Plan (2021)                |          10 |
-| Austin (Tex)                               |          10 |
-| Catskill Mountains                         |          10 |
-| Catskills (NYS Area)                       |          10 |
-| Congressional Budget Office                |          10 |
-| Content Type: Personal Profile             |          10 |
-| Country Music                              |          10 |
-| Disease Rates                              |          10 |
-| Drugs (Pharmaceuticals)                    |          10 |
-| E Coli (Bacteria)                          |          10 |
-| Food                                       |          10 |
+| Keyword                                              | \# Articles |
+|:-----------------------------------------------------|------------:|
+| Midterm Elections (2022)                             |          30 |
+| United States Politics and Government                |          30 |
+| Democratic Party                                     |          20 |
+| Elections, House of Representatives                  |          20 |
+| Abortion                                             |          10 |
+| Bank of England                                      |          10 |
+| Biden, Joseph R Jr                                   |          10 |
+| Bolt, Usain                                          |          10 |
+| Chernihiv (Ukraine)                                  |          10 |
+| Civilian Casualties                                  |          10 |
+| Crist, Charlie                                       |          10 |
+| Defense and Military Forces                          |          10 |
+| DeSantis, Ron                                        |          10 |
+| Discrimination                                       |          10 |
+| East Hampton (NY)                                    |          10 |
+| Education (K-12)                                     |          10 |
+| Elections, Governors                                 |          10 |
+| Elections, Senate                                    |          10 |
+| Endangered and Extinct Species                       |          10 |
+| Far East, South and Southeast Asia and Pacific Areas |          10 |
