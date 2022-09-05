@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-08-29.
+2022-09-05.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                              | \# Articles |
-|:-----------------------------------------------------|------------:|
-| Midterm Elections (2022)                             |          30 |
-| United States Politics and Government                |          30 |
-| Democratic Party                                     |          20 |
-| Elections, House of Representatives                  |          20 |
-| Abortion                                             |          10 |
-| Bank of England                                      |          10 |
-| Biden, Joseph R Jr                                   |          10 |
-| Bolt, Usain                                          |          10 |
-| Chernihiv (Ukraine)                                  |          10 |
-| Civilian Casualties                                  |          10 |
-| Crist, Charlie                                       |          10 |
-| Defense and Military Forces                          |          10 |
-| DeSantis, Ron                                        |          10 |
-| Discrimination                                       |          10 |
-| East Hampton (NY)                                    |          10 |
-| Education (K-12)                                     |          10 |
-| Elections, Governors                                 |          10 |
-| Elections, Senate                                    |          10 |
-| Endangered and Extinct Species                       |          10 |
-| Far East, South and Southeast Asia and Pacific Areas |          10 |
+| Keyword                               | \# Articles |
+|:--------------------------------------|------------:|
+| Midterm Elections (2022)              |          30 |
+| United States Politics and Government |          30 |
+| Democratic Party                      |          20 |
+| Law and Legislation                   |          20 |
+| Republican Party                      |          20 |
+| Workplace Hazards and Violations      |          20 |
+| Abortion                              |          10 |
+| Alinea Invest Inc                     |          10 |
+| Arrayit Corporation                   |          10 |
+| audio-neutral-informative             |          10 |
+| Black People                          |          10 |
+| Blacks                                |          10 |
+| Books and Literature                  |          10 |
+| Bribery and Kickbacks                 |          10 |
+| Campaign Finance                      |          10 |
+| Chile                                 |          10 |
+| Colleges and Universities             |          10 |
+| Computers and the Internet            |          10 |
+| Conservatism (US Politics)            |          10 |
+| Constitution (US)                     |          10 |
