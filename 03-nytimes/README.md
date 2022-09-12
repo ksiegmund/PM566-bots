@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-09-05.
+2022-09-12.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                               | \# Articles |
-|:--------------------------------------|------------:|
-| Midterm Elections (2022)              |          30 |
-| United States Politics and Government |          30 |
-| Democratic Party                      |          20 |
-| Law and Legislation                   |          20 |
-| Republican Party                      |          20 |
-| Workplace Hazards and Violations      |          20 |
-| Abortion                              |          10 |
-| Alinea Invest Inc                     |          10 |
-| Arrayit Corporation                   |          10 |
-| audio-neutral-informative             |          10 |
-| Black People                          |          10 |
-| Blacks                                |          10 |
-| Books and Literature                  |          10 |
-| Bribery and Kickbacks                 |          10 |
-| Campaign Finance                      |          10 |
-| Chile                                 |          10 |
-| Colleges and Universities             |          10 |
-| Computers and the Internet            |          10 |
-| Conservatism (US Politics)            |          10 |
-| Constitution (US)                     |          10 |
+| Keyword                                | \# Articles |
+|:---------------------------------------|------------:|
+| China                                  |          20 |
+| Coronavirus (2019-nCoV)                |          20 |
+| New York City                          |          20 |
+| Antitrust Laws and Competition Issues  |          10 |
+| Australia                              |          10 |
+| Baltimore (Md)                         |          10 |
+| Bangalore (India)                      |          10 |
+| Banks, David C (1962- )                |          10 |
+| Bees                                   |          10 |
+| Bharatiya Janata Party                 |          10 |
+| California                             |          10 |
+| California Independent System Operator |          10 |
+| City Council (NYC)                     |          10 |
+| Content Type: Personal Profile         |          10 |
+| Courts and the Judiciary               |          10 |
+| Crime and Criminals                    |          10 |
+| Criminal Justice                       |          10 |
+| Deaths (Fatalities)                    |          10 |
+| Democratic Party                       |          10 |
+| Discrimination                         |          10 |
