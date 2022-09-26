@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-09-19.
+2022-09-26.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                              | \# Articles |
-|:-------------------------------------|------------:|
-| Content Type: Personal Profile       |          20 |
-| Content Type: Service                |          20 |
-| Coronavirus (2019-nCoV)              |          20 |
-| Abortion                             |          10 |
-| Aman New York (Manhattan, NY, Hotel) |          10 |
-| Andersson, Magdalena (1967- )        |          10 |
-| Animals                              |          10 |
-| ARTIFICIAL INSEMINATION              |          10 |
-| Autumn (Season)                      |          10 |
-| Biodiversity                         |          10 |
-| Burn (Dance)                         |          10 |
-| Burns, Robert (1759-96)              |          10 |
-| Condominiums                         |          10 |
-| Conservation of Resources            |          10 |
-| Cumming, Alan                        |          10 |
-| Dancing                              |          10 |
-| Edinburgh International Festival     |          10 |
-| Elizabeth II, Queen of Great Britain |          10 |
-| Employee Fringe Benefits             |          10 |
-| Endangered and Extinct Species       |          10 |
+| Keyword                                 | \# Articles |
+|:----------------------------------------|------------:|
+| Elderly                                 |          20 |
+| Hospitals                               |          20 |
+| Nursing Homes                           |          20 |
+| Women’s Rights                          |          20 |
+| AFRICA                                  |          10 |
+| Air Conditioning                        |          10 |
+| ALASKA                                  |          10 |
+| Alternative and Renewable Energy        |          10 |
+| Amini, Mahsa (2000-22)                  |          10 |
+| Antibiotics                             |          10 |
+| Anxiety and Stress                      |          10 |
+| Arbitration, Conciliation and Mediation |          10 |
+| audio-neutral-informative               |          10 |
+| Bacteria                                |          10 |
+| Beaumont (Tex)                          |          10 |
+| Boylan, Jennifer Finney                 |          10 |
+| Brookdale Senior Living Inc             |          10 |
+| California                              |          10 |
+| Content Type: Service                   |          10 |
+| Deaths (Fatalities)                     |          10 |
