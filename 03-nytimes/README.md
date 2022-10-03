@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-09-26.
+2022-10-03.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                 | \# Articles |
-|:----------------------------------------|------------:|
-| Elderly                                 |          20 |
-| Hospitals                               |          20 |
-| Nursing Homes                           |          20 |
-| Women’s Rights                          |          20 |
-| AFRICA                                  |          10 |
-| Air Conditioning                        |          10 |
-| ALASKA                                  |          10 |
-| Alternative and Renewable Energy        |          10 |
-| Amini, Mahsa (2000-22)                  |          10 |
-| Antibiotics                             |          10 |
-| Anxiety and Stress                      |          10 |
-| Arbitration, Conciliation and Mediation |          10 |
-| audio-neutral-informative               |          10 |
-| Bacteria                                |          10 |
-| Beaumont (Tex)                          |          10 |
-| Boylan, Jennifer Finney                 |          10 |
-| Brookdale Senior Living Inc             |          10 |
-| California                              |          10 |
-| Content Type: Service                   |          10 |
-| Deaths (Fatalities)                     |          10 |
+| Keyword                               | \# Articles |
+|:--------------------------------------|------------:|
+| Midterm Elections (2022)              |          50 |
+| Democratic Party                      |          40 |
+| Republican Party                      |          40 |
+| United States Politics and Government |          40 |
+| Biden, Joseph R Jr                    |          20 |
+| Pennsylvania                          |          20 |
+| States (US)                           |          20 |
+| Abortion                              |          10 |
+| Admissions Standards                  |          10 |
+| Affirmative Action                    |          10 |
+| Arizona                               |          10 |
+| Banking and Financial Institutions    |          10 |
+| Books and Literature                  |          10 |
+| Campaign Finance                      |          10 |
+| Colleges and Universities             |          10 |
+| Corporate Social Responsibility       |          10 |
+| Decisions and Verdicts                |          10 |
+| DeSantis, Ron                         |          10 |
+| Discrimination                        |          10 |
+| Elections, Governors                  |          10 |
