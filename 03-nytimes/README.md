@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-10-03.
+2022-10-10.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                               | \# Articles |
-|:--------------------------------------|------------:|
-| Midterm Elections (2022)              |          50 |
-| Democratic Party                      |          40 |
-| Republican Party                      |          40 |
-| United States Politics and Government |          40 |
-| Biden, Joseph R Jr                    |          20 |
-| Pennsylvania                          |          20 |
-| States (US)                           |          20 |
-| Abortion                              |          10 |
-| Admissions Standards                  |          10 |
-| Affirmative Action                    |          10 |
-| Arizona                               |          10 |
-| Banking and Financial Institutions    |          10 |
-| Books and Literature                  |          10 |
-| Campaign Finance                      |          10 |
-| Colleges and Universities             |          10 |
-| Corporate Social Responsibility       |          10 |
-| Decisions and Verdicts                |          10 |
-| DeSantis, Ron                         |          10 |
-| Discrimination                        |          10 |
-| Elections, Governors                  |          10 |
+| Keyword                                      | \# Articles |
+|:---------------------------------------------|------------:|
+| Colleges and Universities                    |          30 |
+| New York City                                |          20 |
+| New York University                          |          20 |
+| Republican Party                             |          20 |
+| United States                                |          20 |
+| United States Politics and Government        |          20 |
+| Abortion                                     |          10 |
+| Admissions Standards                         |          10 |
+| Age, Chronological                           |          10 |
+| Baldwin, Alec                                |          10 |
+| Bikers Against Child Abuse International Inc |          10 |
+| Birth Defects                                |          10 |
+| California                                   |          10 |
+| Chemistry                                    |          10 |
+| Child Abuse and Neglect                      |          10 |
+| Computers and the Internet                   |          10 |
+| Conservatism (US Politics)                   |          10 |
+| Constitution (US)                            |          10 |
+| Content Type: Personal Profile               |          10 |
+| Contreras, Billyjoe                          |          10 |
