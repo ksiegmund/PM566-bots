@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-10-10.
+2022-10-17.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                                      | \# Articles |
-|:---------------------------------------------|------------:|
-| Colleges and Universities                    |          30 |
-| New York City                                |          20 |
-| New York University                          |          20 |
-| Republican Party                             |          20 |
-| United States                                |          20 |
-| United States Politics and Government        |          20 |
-| Abortion                                     |          10 |
-| Admissions Standards                         |          10 |
-| Age, Chronological                           |          10 |
-| Baldwin, Alec                                |          10 |
-| Bikers Against Child Abuse International Inc |          10 |
-| Birth Defects                                |          10 |
-| California                                   |          10 |
-| Chemistry                                    |          10 |
-| Child Abuse and Neglect                      |          10 |
-| Computers and the Internet                   |          10 |
-| Conservatism (US Politics)                   |          10 |
-| Constitution (US)                            |          10 |
-| Content Type: Personal Profile               |          10 |
-| Contreras, Billyjoe                          |          10 |
+| Keyword                               | \# Articles |
+|:--------------------------------------|------------:|
+| Doctors                               |          20 |
+| Organized Labor                       |          20 |
+| United States Politics and Government |          20 |
+| Actors and Actresses                  |          10 |
+| Apple Inc                             |          10 |
+| Art                                   |          10 |
+| Campaign Finance                      |          10 |
+| Children and Childhood                |          10 |
+| Communications Workers of America     |          10 |
+| Conservatism (US Politics)            |          10 |
+| Consumer Price Index                  |          10 |
+| Content Type: Personal Profile        |          10 |
+| Deaths (Obituaries)                   |          10 |
+| Democracy (Theory and Philosophy)     |          10 |
+| Democratic Party                      |          10 |
+| DiMaio, Vincent (1941-2022)           |          10 |
+| Elderly                               |          10 |
+| Elections, State Legislature          |          10 |
+| Emergency Medical Treatment           |          10 |
+| Ethics and Public Policy Center       |          10 |
