@@ -5,7 +5,7 @@ The following is an example of how to use the [NYTimes
 API](https://developer.nytimes.com/) to get a list of articles related
 to a particular term. Here we are searching articles that include the
 term `"health"`, and that were published up to seven days ago since
-2022-10-17.
+2022-10-24.
 
 ``` r
 # Preparing a function to use the GET method with the NYTimes API
@@ -83,25 +83,25 @@ colnames(tab) <- c("Keyword", "# Articles")
 knitr::kable(tab, row.names = FALSE)
 ```
 
-| Keyword                               | \# Articles |
-|:--------------------------------------|------------:|
-| Doctors                               |          20 |
-| Organized Labor                       |          20 |
-| United States Politics and Government |          20 |
-| Actors and Actresses                  |          10 |
-| Apple Inc                             |          10 |
-| Art                                   |          10 |
-| Campaign Finance                      |          10 |
-| Children and Childhood                |          10 |
-| Communications Workers of America     |          10 |
-| Conservatism (US Politics)            |          10 |
-| Consumer Price Index                  |          10 |
-| Content Type: Personal Profile        |          10 |
-| Deaths (Obituaries)                   |          10 |
-| Democracy (Theory and Philosophy)     |          10 |
-| Democratic Party                      |          10 |
-| DiMaio, Vincent (1941-2022)           |          10 |
-| Elderly                               |          10 |
-| Elections, State Legislature          |          10 |
-| Emergency Medical Treatment           |          10 |
-| Ethics and Public Policy Center       |          10 |
+| Keyword                           | \# Articles |
+|:----------------------------------|------------:|
+| Midterm Elections (2022)          |          20 |
+| Research                          |          20 |
+| Abortion                          |          10 |
+| Abrams, Stacey Y                  |          10 |
+| Agriculture and Farming           |          10 |
+| AMERICANS WITH DISABILITIES ACT   |          10 |
+| ARTIFICIAL INSEMINATION           |          10 |
+| Baseball                          |          10 |
+| Cameroon                          |          10 |
+| Content Type: Service             |          10 |
+| Coronavirus (2019-nCoV)           |          10 |
+| Dating and Relationships          |          10 |
+| Deafness                          |          10 |
+| Deaths (Fatalities)               |          10 |
+| Debates (Political)               |          10 |
+| Democracy (Theory and Philosophy) |          10 |
+| Democratic Party                  |          10 |
+| Disabilities                      |          10 |
+| Discrimination                    |          10 |
+| Doctors                           |          10 |
